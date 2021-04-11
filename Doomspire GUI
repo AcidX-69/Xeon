@@ -1,0 +1,539 @@
+if game.CoreGui:FindFirstChild("DoomSpireGUI")then
+	game.CoreGui["DoomSpireGUI"]:Destory()
+end
+
+local DoomSpireGUI = Instance.new("ScreenGui")
+local Main = Instance.new("ImageLabel")
+local TITLE = Instance.new("TextLabel")
+local Close = Instance.new("ImageButton")
+local TITLEUnderline = Instance.new("TextLabel")
+local redTop = Instance.new("TextButton")
+local RedTopround = Instance.new("ImageLabel")
+local RedToplbl = Instance.new("TextLabel")
+local redlbl = Instance.new("TextLabel")
+local yellowBottom = Instance.new("TextButton")
+local yellowBottomround = Instance.new("ImageLabel")
+local yellowBottomplbl = Instance.new("TextLabel")
+local greenBottom = Instance.new("TextButton")
+local greenBottomround = Instance.new("ImageLabel")
+local greenBottomplbl = Instance.new("TextLabel")
+local blueTop = Instance.new("TextButton")
+local RedTopround_2 = Instance.new("ImageLabel")
+local RedToplbl_2 = Instance.new("TextLabel")
+local yellowlbl = Instance.new("TextLabel")
+local bluelbl = Instance.new("TextLabel")
+local blueBottom = Instance.new("TextButton")
+local RedBottomround = Instance.new("ImageLabel")
+local RedBottomplbl = Instance.new("TextLabel")
+local yellowTop = Instance.new("TextButton")
+local yellowTopround = Instance.new("ImageLabel")
+local yellowToplbl = Instance.new("TextLabel")
+local greenlbl = Instance.new("TextLabel")
+local greenTop = Instance.new("TextButton")
+local greenTopround = Instance.new("ImageLabel")
+local greenToplbl = Instance.new("TextLabel")
+local redBottom = Instance.new("TextButton")
+local RedBottomround_2 = Instance.new("ImageLabel")
+local RedBottomplbl_2 = Instance.new("TextLabel")
+local TITLEUnderline_2 = Instance.new("TextLabel")
+local Opengui = Instance.new("ImageLabel")
+local open = Instance.new("ImageButton")
+
+DoomSpireGUI.Name = "DoomSpireGUI"
+DoomSpireGUI.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = DoomSpireGUI
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(0.408609599, 0, 0.32432434, 0)
+Main.Size = UDim2.new(0, 265, 0, 286)
+Main.Image = "rbxassetid://3570695787"
+Main.ImageColor3 = Color3.fromRGB(20, 20, 20)
+Main.ScaleType = Enum.ScaleType.Slice
+Main.SliceCenter = Rect.new(100, 100, 100, 100)
+Main.SliceScale = 0.120
+Main.Draggable = true
+
+TITLE.Name = "TITLE"
+TITLE.Parent = Main
+TITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TITLE.BackgroundTransparency = 1.000
+TITLE.Position = UDim2.new(-0.0015941048, 0, -0.00384978019, 0)
+TITLE.Size = UDim2.new(0, 159, 0, 27)
+TITLE.Font = Enum.Font.GothamBlack
+TITLE.Text = "Doomspire Teleports"
+TITLE.TextColor3 = Color3.fromRGB(255, 255, 255)
+TITLE.TextSize = 14.000
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.891440094, 0, 0.00111806765, 0)
+Close.Size = UDim2.new(0, 25, 0, 25)
+Close.ZIndex = 2
+Close.Image = "rbxassetid://3926307971"
+Close.ImageRectOffset = Vector2.new(884, 284)
+Close.ImageRectSize = Vector2.new(36, 36)
+
+TITLEUnderline.Name = "TITLEUnderline"
+TITLEUnderline.Parent = Main
+TITLEUnderline.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TITLEUnderline.BorderSizePixel = 0
+TITLEUnderline.Position = UDim2.new(0.00300000003, 0, 0.100000001, 0)
+TITLEUnderline.Size = UDim2.new(0, 264, 0, 2)
+TITLEUnderline.Font = Enum.Font.SourceSans
+TITLEUnderline.Text = ""
+TITLEUnderline.TextColor3 = Color3.fromRGB(0, 0, 0)
+TITLEUnderline.TextSize = 14.000
+
+redTop.Name = "redTop"
+redTop.Parent = Main
+redTop.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+redTop.BackgroundTransparency = 1.000
+redTop.BorderSizePixel = 0
+redTop.Position = UDim2.new(0.0944981873, 0, 0.264293551, 0)
+redTop.Size = UDim2.new(0, 84, 0, 32)
+redTop.Font = Enum.Font.Gotham
+redTop.Text = ""
+redTop.TextColor3 = Color3.fromRGB(255, 255, 255)
+redTop.TextSize = 14.000
+
+RedTopround.Name = "RedTopround"
+RedTopround.Parent = redTop
+RedTopround.Active = true
+RedTopround.AnchorPoint = Vector2.new(0.5, 0.5)
+RedTopround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RedTopround.BackgroundTransparency = 1.000
+RedTopround.Position = UDim2.new(0.507512748, 0, 0.531422913, 0)
+RedTopround.Selectable = true
+RedTopround.Size = UDim2.new(0.988453388, 0, 1.06474054, 0)
+RedTopround.Image = "rbxassetid://3570695787"
+RedTopround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+RedTopround.ScaleType = Enum.ScaleType.Slice
+RedTopround.SliceCenter = Rect.new(100, 100, 100, 100)
+RedTopround.SliceScale = 0.060
+
+RedToplbl.Name = "RedToplbl"
+RedToplbl.Parent = redTop
+RedToplbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RedToplbl.BackgroundTransparency = 1.000
+RedToplbl.Position = UDim2.new(0.0609050952, 0, 0.124052048, 0)
+RedToplbl.Size = UDim2.new(0, 75, 0, 24)
+RedToplbl.Font = Enum.Font.Gotham
+RedToplbl.Text = "Top"
+RedToplbl.TextColor3 = Color3.fromRGB(255, 255, 255)
+RedToplbl.TextScaled = true
+RedToplbl.TextSize = 13.000
+RedToplbl.TextWrapped = true
+
+redlbl.Name = "redlbl"
+redlbl.Parent = Main
+redlbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+redlbl.BackgroundTransparency = 1.000
+redlbl.Position = UDim2.new(-0.0403368175, 0, 0.149849951, 0)
+redlbl.Size = UDim2.new(0, 159, 0, 27)
+redlbl.Font = Enum.Font.GothamBlack
+redlbl.Text = "RED"
+redlbl.TextColor3 = Color3.fromRGB(255, 0, 0)
+redlbl.TextScaled = true
+redlbl.TextSize = 14.000
+redlbl.TextWrapped = true
+
+yellowBottom.Name = "yellowBottom"
+yellowBottom.Parent = Main
+yellowBottom.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+yellowBottom.BackgroundTransparency = 1.000
+yellowBottom.BorderSizePixel = 0
+yellowBottom.Position = UDim2.new(0.594712377, 0, 0.855330646, 0)
+yellowBottom.Size = UDim2.new(0, 84, 0, 32)
+yellowBottom.Font = Enum.Font.Gotham
+yellowBottom.Text = ""
+yellowBottom.TextColor3 = Color3.fromRGB(255, 255, 255)
+yellowBottom.TextSize = 14.000
+
+yellowBottomround.Name = "yellowBottomround"
+yellowBottomround.Parent = yellowBottom
+yellowBottomround.Active = true
+yellowBottomround.AnchorPoint = Vector2.new(0.5, 0.5)
+yellowBottomround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+yellowBottomround.BackgroundTransparency = 1.000
+yellowBottomround.Position = UDim2.new(0.507512748, 0, 0.531422913, 0)
+yellowBottomround.Selectable = true
+yellowBottomround.Size = UDim2.new(0.988453388, 0, 1.06474054, 0)
+yellowBottomround.Image = "rbxassetid://3570695787"
+yellowBottomround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+yellowBottomround.ScaleType = Enum.ScaleType.Slice
+yellowBottomround.SliceCenter = Rect.new(100, 100, 100, 100)
+yellowBottomround.SliceScale = 0.060
+
+yellowBottomplbl.Name = "yellowBottomplbl"
+yellowBottomplbl.Parent = yellowBottom
+yellowBottomplbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+yellowBottomplbl.BackgroundTransparency = 1.000
+yellowBottomplbl.Position = UDim2.new(0.0609050952, 0, 0.124052048, 0)
+yellowBottomplbl.Size = UDim2.new(0, 75, 0, 24)
+yellowBottomplbl.Font = Enum.Font.Gotham
+yellowBottomplbl.Text = "Bottom"
+yellowBottomplbl.TextColor3 = Color3.fromRGB(255, 255, 255)
+yellowBottomplbl.TextScaled = true
+yellowBottomplbl.TextSize = 13.000
+yellowBottomplbl.TextWrapped = true
+
+greenBottom.Name = "greenBottom"
+greenBottom.Parent = Main
+greenBottom.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+greenBottom.BackgroundTransparency = 1.000
+greenBottom.BorderSizePixel = 0
+greenBottom.Position = UDim2.new(0.0928255767, 0, 0.853042424, 0)
+greenBottom.Size = UDim2.new(0, 84, 0, 32)
+greenBottom.Font = Enum.Font.Gotham
+greenBottom.Text = ""
+greenBottom.TextColor3 = Color3.fromRGB(255, 255, 255)
+greenBottom.TextSize = 14.000
+
+greenBottomround.Name = "greenBottomround"
+greenBottomround.Parent = greenBottom
+greenBottomround.Active = true
+greenBottomround.AnchorPoint = Vector2.new(0.5, 0.5)
+greenBottomround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+greenBottomround.BackgroundTransparency = 1.000
+greenBottomround.Position = UDim2.new(0.507512748, 0, 0.531422913, 0)
+greenBottomround.Selectable = true
+greenBottomround.Size = UDim2.new(0.988453388, 0, 1.06474054, 0)
+greenBottomround.Image = "rbxassetid://3570695787"
+greenBottomround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+greenBottomround.ScaleType = Enum.ScaleType.Slice
+greenBottomround.SliceCenter = Rect.new(100, 100, 100, 100)
+greenBottomround.SliceScale = 0.060
+
+greenBottomplbl.Name = "greenBottomplbl"
+greenBottomplbl.Parent = greenBottom
+greenBottomplbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+greenBottomplbl.BackgroundTransparency = 1.000
+greenBottomplbl.Position = UDim2.new(0.0609050952, 0, 0.124052048, 0)
+greenBottomplbl.Size = UDim2.new(0, 75, 0, 24)
+greenBottomplbl.Font = Enum.Font.Gotham
+greenBottomplbl.Text = "Bottom"
+greenBottomplbl.TextColor3 = Color3.fromRGB(255, 255, 255)
+greenBottomplbl.TextScaled = true
+greenBottomplbl.TextSize = 13.000
+greenBottomplbl.TextWrapped = true
+
+blueTop.Name = "blueTop"
+blueTop.Parent = Main
+blueTop.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+blueTop.BackgroundTransparency = 1.000
+blueTop.BorderSizePixel = 0
+blueTop.Position = UDim2.new(0.582313418, 0, 0.266581744, 0)
+blueTop.Size = UDim2.new(0, 84, 0, 32)
+blueTop.Font = Enum.Font.Gotham
+blueTop.Text = ""
+blueTop.TextColor3 = Color3.fromRGB(255, 255, 255)
+blueTop.TextSize = 14.000
+
+RedTopround_2.Name = "RedTopround"
+RedTopround_2.Parent = blueTop
+RedTopround_2.Active = true
+RedTopround_2.AnchorPoint = Vector2.new(0.5, 0.5)
+RedTopround_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RedTopround_2.BackgroundTransparency = 1.000
+RedTopround_2.Position = UDim2.new(0.507512748, 0, 0.531422913, 0)
+RedTopround_2.Selectable = true
+RedTopround_2.Size = UDim2.new(0.988453388, 0, 1.06474054, 0)
+RedTopround_2.Image = "rbxassetid://3570695787"
+RedTopround_2.ImageColor3 = Color3.fromRGB(29, 29, 29)
+RedTopround_2.ScaleType = Enum.ScaleType.Slice
+RedTopround_2.SliceCenter = Rect.new(100, 100, 100, 100)
+RedTopround_2.SliceScale = 0.060
+
+RedToplbl_2.Name = "RedToplbl"
+RedToplbl_2.Parent = blueTop
+RedToplbl_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RedToplbl_2.BackgroundTransparency = 1.000
+RedToplbl_2.Position = UDim2.new(0.0609050952, 0, 0.124052048, 0)
+RedToplbl_2.Size = UDim2.new(0, 75, 0, 24)
+RedToplbl_2.Font = Enum.Font.Gotham
+RedToplbl_2.Text = "Top"
+RedToplbl_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+RedToplbl_2.TextScaled = true
+RedToplbl_2.TextSize = 13.000
+RedToplbl_2.TextWrapped = true
+
+yellowlbl.Name = "yellowlbl"
+yellowlbl.Parent = Main
+yellowlbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+yellowlbl.BackgroundTransparency = 1.000
+yellowlbl.Position = UDim2.new(0.450229287, 0, 0.603205442, 0)
+yellowlbl.Size = UDim2.new(0, 159, 0, 27)
+yellowlbl.Font = Enum.Font.GothamBlack
+yellowlbl.Text = "YELLOW"
+yellowlbl.TextColor3 = Color3.fromRGB(255, 255, 0)
+yellowlbl.TextScaled = true
+yellowlbl.TextSize = 14.000
+yellowlbl.TextWrapped = true
+
+bluelbl.Name = "bluelbl"
+bluelbl.Parent = Main
+bluelbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bluelbl.BackgroundTransparency = 1.000
+bluelbl.Position = UDim2.new(0.439931184, 0, 0.150417417, 0)
+bluelbl.Size = UDim2.new(0, 159, 0, 27)
+bluelbl.Font = Enum.Font.GothamBlack
+bluelbl.Text = "BLUE"
+bluelbl.TextColor3 = Color3.fromRGB(0, 0, 255)
+bluelbl.TextScaled = true
+bluelbl.TextSize = 14.000
+bluelbl.TextWrapped = true
+
+blueBottom.Name = "blueBottom"
+blueBottom.Parent = Main
+blueBottom.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+blueBottom.BackgroundTransparency = 1.000
+blueBottom.BorderSizePixel = 0
+blueBottom.Position = UDim2.new(0.584414244, 0, 0.406039178, 0)
+blueBottom.Size = UDim2.new(0, 84, 0, 32)
+blueBottom.Font = Enum.Font.Gotham
+blueBottom.Text = ""
+blueBottom.TextColor3 = Color3.fromRGB(255, 255, 255)
+blueBottom.TextSize = 14.000
+
+RedBottomround.Name = "RedBottomround"
+RedBottomround.Parent = blueBottom
+RedBottomround.Active = true
+RedBottomround.AnchorPoint = Vector2.new(0.5, 0.5)
+RedBottomround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RedBottomround.BackgroundTransparency = 1.000
+RedBottomround.Position = UDim2.new(0.507512748, 0, 0.531422913, 0)
+RedBottomround.Selectable = true
+RedBottomround.Size = UDim2.new(0.988453388, 0, 1.06474054, 0)
+RedBottomround.Image = "rbxassetid://3570695787"
+RedBottomround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+RedBottomround.ScaleType = Enum.ScaleType.Slice
+RedBottomround.SliceCenter = Rect.new(100, 100, 100, 100)
+RedBottomround.SliceScale = 0.060
+
+RedBottomplbl.Name = "RedBottomplbl"
+RedBottomplbl.Parent = blueBottom
+RedBottomplbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RedBottomplbl.BackgroundTransparency = 1.000
+RedBottomplbl.Position = UDim2.new(0.0609050952, 0, 0.124052048, 0)
+RedBottomplbl.Size = UDim2.new(0, 75, 0, 24)
+RedBottomplbl.Font = Enum.Font.Gotham
+RedBottomplbl.Text = "Bottom"
+RedBottomplbl.TextColor3 = Color3.fromRGB(255, 255, 255)
+RedBottomplbl.TextScaled = true
+RedBottomplbl.TextSize = 13.000
+RedBottomplbl.TextWrapped = true
+
+yellowTop.Name = "yellowTop"
+yellowTop.Parent = Main
+yellowTop.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+yellowTop.BackgroundTransparency = 1.000
+yellowTop.BorderSizePixel = 0
+yellowTop.Position = UDim2.new(0.592611551, 0, 0.715873301, 0)
+yellowTop.Size = UDim2.new(0, 84, 0, 32)
+yellowTop.Font = Enum.Font.Gotham
+yellowTop.Text = ""
+yellowTop.TextColor3 = Color3.fromRGB(255, 255, 255)
+yellowTop.TextSize = 14.000
+
+yellowTopround.Name = "yellowTopround"
+yellowTopround.Parent = yellowTop
+yellowTopround.Active = true
+yellowTopround.AnchorPoint = Vector2.new(0.5, 0.5)
+yellowTopround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+yellowTopround.BackgroundTransparency = 1.000
+yellowTopround.Position = UDim2.new(0.507512748, 0, 0.531422913, 0)
+yellowTopround.Selectable = true
+yellowTopround.Size = UDim2.new(0.988453388, 0, 1.06474054, 0)
+yellowTopround.Image = "rbxassetid://3570695787"
+yellowTopround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+yellowTopround.ScaleType = Enum.ScaleType.Slice
+yellowTopround.SliceCenter = Rect.new(100, 100, 100, 100)
+yellowTopround.SliceScale = 0.060
+
+yellowToplbl.Name = "yellowToplbl"
+yellowToplbl.Parent = yellowTop
+yellowToplbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+yellowToplbl.BackgroundTransparency = 1.000
+yellowToplbl.Position = UDim2.new(0.0609050952, 0, 0.124052048, 0)
+yellowToplbl.Size = UDim2.new(0, 75, 0, 24)
+yellowToplbl.Font = Enum.Font.Gotham
+yellowToplbl.Text = "Top"
+yellowToplbl.TextColor3 = Color3.fromRGB(255, 255, 255)
+yellowToplbl.TextScaled = true
+yellowToplbl.TextSize = 13.000
+yellowToplbl.TextWrapped = true
+
+greenlbl.Name = "greenlbl"
+greenlbl.Parent = Main
+greenlbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+greenlbl.BackgroundTransparency = 1.000
+greenlbl.Position = UDim2.new(-0.0516575128, 0, 0.600898862, 0)
+greenlbl.Size = UDim2.new(0, 159, 0, 27)
+greenlbl.Font = Enum.Font.GothamBlack
+greenlbl.Text = "GREEN"
+greenlbl.TextColor3 = Color3.fromRGB(0, 170, 0)
+greenlbl.TextScaled = true
+greenlbl.TextSize = 14.000
+greenlbl.TextWrapped = true
+
+greenTop.Name = "greenTop"
+greenTop.Parent = Main
+greenTop.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+greenTop.BackgroundTransparency = 1.000
+greenTop.BorderSizePixel = 0
+greenTop.Position = UDim2.new(0.0907246321, 0, 0.711845934, 0)
+greenTop.Size = UDim2.new(0, 84, 0, 32)
+greenTop.Font = Enum.Font.Gotham
+greenTop.Text = ""
+greenTop.TextColor3 = Color3.fromRGB(255, 255, 255)
+greenTop.TextSize = 14.000
+
+greenTopround.Name = "greenTopround"
+greenTopround.Parent = greenTop
+greenTopround.Active = true
+greenTopround.AnchorPoint = Vector2.new(0.5, 0.5)
+greenTopround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+greenTopround.BackgroundTransparency = 1.000
+greenTopround.Position = UDim2.new(0.507512748, 0, 0.531422913, 0)
+greenTopround.Selectable = true
+greenTopround.Size = UDim2.new(0.988453388, 0, 1.06474054, 0)
+greenTopround.Image = "rbxassetid://3570695787"
+greenTopround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+greenTopround.ScaleType = Enum.ScaleType.Slice
+greenTopround.SliceCenter = Rect.new(100, 100, 100, 100)
+greenTopround.SliceScale = 0.060
+
+greenToplbl.Name = "greenToplbl"
+greenToplbl.Parent = greenTop
+greenToplbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+greenToplbl.BackgroundTransparency = 1.000
+greenToplbl.Position = UDim2.new(0.0609050952, 0, 0.124052048, 0)
+greenToplbl.Size = UDim2.new(0, 75, 0, 24)
+greenToplbl.Font = Enum.Font.Gotham
+greenToplbl.Text = "Top"
+greenToplbl.TextColor3 = Color3.fromRGB(255, 255, 255)
+greenToplbl.TextScaled = true
+greenToplbl.TextSize = 13.000
+greenToplbl.TextWrapped = true
+
+redBottom.Name = "redBottom"
+redBottom.Parent = Main
+redBottom.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+redBottom.BackgroundTransparency = 1.000
+redBottom.BorderSizePixel = 0
+redBottom.Position = UDim2.new(0.100372702, 0, 0.405489981, 0)
+redBottom.Size = UDim2.new(0, 84, 0, 32)
+redBottom.Font = Enum.Font.Gotham
+redBottom.Text = ""
+redBottom.TextColor3 = Color3.fromRGB(255, 255, 255)
+redBottom.TextSize = 14.000
+
+RedBottomround_2.Name = "RedBottomround"
+RedBottomround_2.Parent = redBottom
+RedBottomround_2.Active = true
+RedBottomround_2.AnchorPoint = Vector2.new(0.5, 0.5)
+RedBottomround_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RedBottomround_2.BackgroundTransparency = 1.000
+RedBottomround_2.Position = UDim2.new(0.507512748, 0, 0.531422913, 0)
+RedBottomround_2.Selectable = true
+RedBottomround_2.Size = UDim2.new(0.988453388, 0, 1.06474054, 0)
+RedBottomround_2.Image = "rbxassetid://3570695787"
+RedBottomround_2.ImageColor3 = Color3.fromRGB(29, 29, 29)
+RedBottomround_2.ScaleType = Enum.ScaleType.Slice
+RedBottomround_2.SliceCenter = Rect.new(100, 100, 100, 100)
+RedBottomround_2.SliceScale = 0.060
+
+RedBottomplbl_2.Name = "RedBottomplbl"
+RedBottomplbl_2.Parent = redBottom
+RedBottomplbl_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RedBottomplbl_2.BackgroundTransparency = 1.000
+RedBottomplbl_2.Position = UDim2.new(0.0609050952, 0, 0.124052048, 0)
+RedBottomplbl_2.Size = UDim2.new(0, 75, 0, 24)
+RedBottomplbl_2.Font = Enum.Font.Gotham
+RedBottomplbl_2.Text = "Bottom"
+RedBottomplbl_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+RedBottomplbl_2.TextScaled = true
+RedBottomplbl_2.TextSize = 13.000
+RedBottomplbl_2.TextWrapped = true
+
+TITLEUnderline_2.Name = "TITLEUnderline"
+TITLEUnderline_2.Parent = Main
+TITLEUnderline_2.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+TITLEUnderline_2.BorderSizePixel = 0
+TITLEUnderline_2.Position = UDim2.new(0.00300000003, 0, 0.560000002, 0)
+TITLEUnderline_2.Size = UDim2.new(0, 264, 0, 2)
+TITLEUnderline_2.Font = Enum.Font.SourceSans
+TITLEUnderline_2.Text = ""
+TITLEUnderline_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TITLEUnderline_2.TextSize = 14.000
+
+Opengui.Name = "Opengui"
+Opengui.Parent = DoomSpireGUI
+Opengui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Opengui.BackgroundTransparency = 1.000
+Opengui.Position = UDim2.new(0.827734053, 0, 0.949631453, 0)
+Opengui.Size = UDim2.new(0, 55, 0, 49)
+Opengui.Visible = false
+Opengui.Image = "rbxassetid://3570695787"
+Opengui.ImageColor3 = Color3.fromRGB(30, 30, 30)
+Opengui.ScaleType = Enum.ScaleType.Slice
+Opengui.SliceCenter = Rect.new(100, 100, 100, 100)
+Opengui.SliceScale = 0.060
+
+open.Name = "open"
+open.Parent = Opengui
+open.BackgroundTransparency = 1.000
+open.LayoutOrder = 11
+open.Size = UDim2.new(0, 55, 0, 35)
+open.ZIndex = 2
+open.Image = "rbxassetid://3926305904"
+open.ImageRectOffset = Vector2.new(44, 404)
+open.ImageRectSize = Vector2.new(36, 36)
+
+--Scripts:
+
+Close.MouseButton1Click:Connect(function()
+	Main.Visible = false
+	Opengui.Visible = true
+end)
+
+open.MouseButton1Click:Connect(function()
+	Main.Visible = true
+	Opengui.Visible = false
+end)
+
+redTop.MouseButton1Click:Connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-101.100471, 129.199905, -0.267472327)
+end)
+
+redBottom.MouseButton1Click:Connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-130.942795, 24.8000011, -0.0996124372)
+end)
+
+blueTop.MouseButton1Click:Connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0.178424984, 129.199905, 105.910217)
+end)
+
+blueBottom.MouseButton1Click:Connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-0.400000006, 23.6000404, 131)
+end)
+
+greenTop.MouseButton1Click:Connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1.48103595, 129.199905, -103.60363)
+end)
+
+greenBottom.MouseButton1Click:Connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-0.400000006, 24.7999821, -131)
+end)
+
+yellowTop.MouseButton1Click:Connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(100.783356, 129.199905, -3.30287719)
+end)
+
+yellowBottom.MouseButton1Click:Connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(131, 24.7999821, -1.5)
+end)
