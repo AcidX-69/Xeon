@@ -1,0 +1,775 @@
+if game.CoreGui:FindFirstChild("MinersHavenGUI")then
+	game.CoreGui["MinersHavenGUI"]:Destory()
+end
+
+local MinersHavenGUI = Instance.new("ScreenGui")
+local Main = Instance.new("ImageLabel")
+local TITLE = Instance.new("TextLabel")
+local Close = Instance.new("ImageButton")
+local TITLEUnderline = Instance.new("TextLabel")
+local MainFunctions = Instance.new("TextLabel")
+local line = Instance.new("TextLabel")
+local BoxTp = Instance.new("TextButton")
+local BoxTPround = Instance.new("ImageLabel")
+local BoxTPlbl = Instance.new("TextLabel")
+local WS10 = Instance.new("TextButton")
+local WSround = Instance.new("ImageLabel")
+local WSlbl = Instance.new("TextLabel")
+local Factory2 = Instance.new("TextButton")
+local Factory2round = Instance.new("ImageLabel")
+local Factory2lbl = Instance.new("TextLabel")
+local Factory4 = Instance.new("TextButton")
+local Factory4round = Instance.new("ImageLabel")
+local Factory4lbl = Instance.new("TextLabel")
+local Factory1 = Instance.new("TextButton")
+local Factory1round = Instance.new("ImageLabel")
+local Factory1lbl = Instance.new("TextLabel")
+local Factory6 = Instance.new("TextButton")
+local Factory6round = Instance.new("ImageLabel")
+local Factory6lbl = Instance.new("TextLabel")
+local Factory5 = Instance.new("TextButton")
+local Factory5round = Instance.new("ImageLabel")
+local Factory5lbl = Instance.new("TextLabel")
+local Factory3 = Instance.new("TextButton")
+local Factory3round = Instance.new("ImageLabel")
+local Factory3lbl = Instance.new("TextLabel")
+local FactoryTele = Instance.new("TextLabel")
+local line_2 = Instance.new("TextLabel")
+local JP10 = Instance.new("TextButton")
+local Jpround = Instance.new("ImageLabel")
+local Jplbl = Instance.new("TextLabel")
+local Misc = Instance.new("TextLabel")
+local line_3 = Instance.new("TextLabel")
+local Carftsman = Instance.new("TextButton")
+local Carftsmanround = Instance.new("ImageLabel")
+local Carftsmanlbl = Instance.new("TextLabel")
+local SpookMcDooks = Instance.new("TextButton")
+local McDooksround = Instance.new("ImageLabel")
+local McDookslbl = Instance.new("TextLabel")
+local Fargield = Instance.new("TextButton")
+local Fargieldround = Instance.new("ImageLabel")
+local Fargieldlbl = Instance.new("TextLabel")
+local MaskedMan = Instance.new("TextButton")
+local MaskedManround = Instance.new("ImageLabel")
+local MaskedManlbl = Instance.new("TextLabel")
+local Opengui = Instance.new("ImageLabel")
+local open = Instance.new("ImageButton")
+
+
+MinersHavenGUI.Name = "MinersHavenGUI"
+MinersHavenGUI.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = MinersHavenGUI
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(0.336943805, 0, 0.318181813, 0)
+Main.Size = UDim2.new(0, 476, 0, 296)
+Main.Image = "rbxassetid://3570695787"
+Main.ImageColor3 = Color3.fromRGB(20, 20, 20)
+Main.ScaleType = Enum.ScaleType.Slice
+Main.SliceCenter = Rect.new(100, 100, 100, 100)
+Main.SliceScale = 0.120
+Main.Active = true
+Main.Draggable = true
+
+TITLE.Name = "TITLE"
+TITLE.Parent = Main
+TITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TITLE.BackgroundTransparency = 1.000
+TITLE.Position = UDim2.new(-0.0478125922, 0, -0.00384978019, 0)
+TITLE.Size = UDim2.new(0, 159, 0, 27)
+TITLE.Font = Enum.Font.GothamBlack
+TITLE.Text = "Miners Haven"
+TITLE.TextColor3 = Color3.fromRGB(255, 0, 127)
+TITLE.TextSize = 14.000
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.932949543, 0, -0.00237843581, 0)
+Close.Size = UDim2.new(0, 25, 0, 25)
+Close.ZIndex = 2
+Close.Image = "rbxassetid://3926307971"
+Close.ImageColor3 = Color3.fromRGB(255, 0, 127)
+Close.ImageRectOffset = Vector2.new(884, 284)
+Close.ImageRectSize = Vector2.new(36, 36)
+
+TITLEUnderline.Name = "TITLEUnderline"
+TITLEUnderline.Parent = Main
+TITLEUnderline.BackgroundColor3 = Color3.fromRGB(255, 0, 127)
+TITLEUnderline.BorderSizePixel = 0
+TITLEUnderline.Position = UDim2.new(0.00680926722, 0, 0.0816117376, 0)
+TITLEUnderline.Size = UDim2.new(0, 470, 0, 2)
+TITLEUnderline.Font = Enum.Font.SourceSans
+TITLEUnderline.Text = ""
+TITLEUnderline.TextColor3 = Color3.fromRGB(0, 0, 0)
+TITLEUnderline.TextSize = 14.000
+TITLEUnderline.Draggable = true
+
+MainFunctions.Name = "MainFunctions"
+MainFunctions.Parent = Main
+MainFunctions.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFunctions.BackgroundTransparency = 1.000
+MainFunctions.Position = UDim2.new(0.0912843123, 0, 0.131282195, 0)
+MainFunctions.Size = UDim2.new(0, 133, 0, 27)
+MainFunctions.Font = Enum.Font.Gotham
+MainFunctions.Text = "Main Functions"
+MainFunctions.TextColor3 = Color3.fromRGB(255, 0, 127)
+MainFunctions.TextSize = 15.000
+
+line.Name = "line"
+line.Parent = Main
+line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+line.BackgroundTransparency = 1.000
+line.Position = UDim2.new(0.503198147, 0, 0.198205739, 0)
+line.Size = UDim2.new(0, 195, 0, 8)
+line.Font = Enum.Font.SourceSans
+line.Text = "--------------------------"
+line.TextColor3 = Color3.fromRGB(255, 0, 127)
+line.TextSize = 20.000
+
+BoxTp.Name = "BoxTp"
+BoxTp.Parent = Main
+BoxTp.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+BoxTp.BackgroundTransparency = 1.000
+BoxTp.BorderSizePixel = 0
+BoxTp.Position = UDim2.new(0.12311092, 0, 0.259225607, 0)
+BoxTp.Size = UDim2.new(0, 103, 0, 34)
+BoxTp.Font = Enum.Font.Gotham
+BoxTp.Text = "Set JumpPower"
+BoxTp.TextColor3 = Color3.fromRGB(255, 255, 255)
+BoxTp.TextSize = 14.000
+
+BoxTPround.Name = "BoxTPround"
+BoxTPround.Parent = BoxTp
+BoxTPround.Active = true
+BoxTPround.AnchorPoint = Vector2.new(0.5, 0.5)
+BoxTPround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BoxTPround.BackgroundTransparency = 1.000
+BoxTPround.Position = UDim2.new(0.495462656, 0, 0.51531446, 0)
+BoxTPround.Selectable = true
+BoxTPround.Size = UDim2.new(1.00980031, 0, 1.03062916, 0)
+BoxTPround.Image = "rbxassetid://3570695787"
+BoxTPround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+BoxTPround.ScaleType = Enum.ScaleType.Slice
+BoxTPround.SliceCenter = Rect.new(100, 100, 100, 100)
+BoxTPround.SliceScale = 0.060
+
+BoxTPlbl.Name = "BoxTPlbl"
+BoxTPlbl.Parent = BoxTp
+BoxTPlbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BoxTPlbl.BackgroundTransparency = 1.000
+BoxTPlbl.Position = UDim2.new(-0.00943733845, 0, 0.0381712057, 0)
+BoxTPlbl.Size = UDim2.new(0, 103, 0, 31)
+BoxTPlbl.Font = Enum.Font.Gotham
+BoxTPlbl.Text = "BoxTP"
+BoxTPlbl.TextColor3 = Color3.fromRGB(255, 0, 127)
+BoxTPlbl.TextSize = 13.000
+
+WS10.Name = "WS+10"
+WS10.Parent = Main
+WS10.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+WS10.BackgroundTransparency = 1.000
+WS10.BorderSizePixel = 0
+WS10.Position = UDim2.new(0.12311092, 0, 0.404495865, 0)
+WS10.Size = UDim2.new(0, 103, 0, 34)
+WS10.Font = Enum.Font.Gotham
+WS10.Text = "Set JumpPower"
+WS10.TextColor3 = Color3.fromRGB(255, 255, 255)
+WS10.TextSize = 14.000
+
+WSround.Name = "WSround"
+WSround.Parent = WS10
+WSround.Active = true
+WSround.AnchorPoint = Vector2.new(0.5, 0.5)
+WSround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WSround.BackgroundTransparency = 1.000
+WSround.Position = UDim2.new(0.495462656, 0, 0.51531446, 0)
+WSround.Selectable = true
+WSround.Size = UDim2.new(1.00980031, 0, 1.03062916, 0)
+WSround.Image = "rbxassetid://3570695787"
+WSround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+WSround.ScaleType = Enum.ScaleType.Slice
+WSround.SliceCenter = Rect.new(100, 100, 100, 100)
+WSround.SliceScale = 0.060
+
+WSlbl.Name = "WSlbl"
+WSlbl.Parent = WS10
+WSlbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WSlbl.BackgroundTransparency = 1.000
+WSlbl.Position = UDim2.new(-0.00943733845, 0, 0.0381712057, 0)
+WSlbl.Size = UDim2.new(0, 103, 0, 31)
+WSlbl.Font = Enum.Font.Gotham
+WSlbl.Text = "WalkSpeed +10"
+WSlbl.TextColor3 = Color3.fromRGB(255, 0, 127)
+WSlbl.TextSize = 13.000
+
+Factory2.Name = "Factory2"
+Factory2.Parent = Main
+Factory2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Factory2.BackgroundTransparency = 1.000
+Factory2.BorderSizePixel = 0
+Factory2.Position = UDim2.new(0.715547919, 0, 0.259225607, 0)
+Factory2.Size = UDim2.new(0, 103, 0, 34)
+Factory2.Font = Enum.Font.Gotham
+Factory2.Text = "Set JumpPower"
+Factory2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Factory2.TextSize = 14.000
+
+Factory2round.Name = "Factory2round"
+Factory2round.Parent = Factory2
+Factory2round.Active = true
+Factory2round.AnchorPoint = Vector2.new(0.5, 0.5)
+Factory2round.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Factory2round.BackgroundTransparency = 1.000
+Factory2round.Position = UDim2.new(0.495462656, 0, 0.51531446, 0)
+Factory2round.Selectable = true
+Factory2round.Size = UDim2.new(1.00980031, 0, 1.03062916, 0)
+Factory2round.Image = "rbxassetid://3570695787"
+Factory2round.ImageColor3 = Color3.fromRGB(29, 29, 29)
+Factory2round.ScaleType = Enum.ScaleType.Slice
+Factory2round.SliceCenter = Rect.new(100, 100, 100, 100)
+Factory2round.SliceScale = 0.060
+
+Factory2lbl.Name = "Factory2lbl"
+Factory2lbl.Parent = Factory2
+Factory2lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Factory2lbl.BackgroundTransparency = 1.000
+Factory2lbl.Position = UDim2.new(-0.00943733845, 0, 0.0381712057, 0)
+Factory2lbl.Size = UDim2.new(0, 103, 0, 31)
+Factory2lbl.Font = Enum.Font.Gotham
+Factory2lbl.Text = "Factory 2"
+Factory2lbl.TextColor3 = Color3.fromRGB(255, 0, 127)
+Factory2lbl.TextSize = 13.000
+
+Factory4.Name = "Factory4"
+Factory4.Parent = Main
+Factory4.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Factory4.BackgroundTransparency = 1.000
+Factory4.BorderSizePixel = 0
+Factory4.Position = UDim2.new(0.713447094, 0, 0.401117504, 0)
+Factory4.Size = UDim2.new(0, 103, 0, 34)
+Factory4.Font = Enum.Font.Gotham
+Factory4.Text = "Set JumpPower"
+Factory4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Factory4.TextSize = 14.000
+
+Factory4round.Name = "Factory4round"
+Factory4round.Parent = Factory4
+Factory4round.Active = true
+Factory4round.AnchorPoint = Vector2.new(0.5, 0.5)
+Factory4round.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Factory4round.BackgroundTransparency = 1.000
+Factory4round.Position = UDim2.new(0.495462656, 0, 0.51531446, 0)
+Factory4round.Selectable = true
+Factory4round.Size = UDim2.new(1.00980031, 0, 1.03062916, 0)
+Factory4round.Image = "rbxassetid://3570695787"
+Factory4round.ImageColor3 = Color3.fromRGB(29, 29, 29)
+Factory4round.ScaleType = Enum.ScaleType.Slice
+Factory4round.SliceCenter = Rect.new(100, 100, 100, 100)
+Factory4round.SliceScale = 0.060
+
+Factory4lbl.Name = "Factory4lbl"
+Factory4lbl.Parent = Factory4
+Factory4lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Factory4lbl.BackgroundTransparency = 1.000
+Factory4lbl.Position = UDim2.new(-0.00943733845, 0, 0.0381712057, 0)
+Factory4lbl.Size = UDim2.new(0, 103, 0, 31)
+Factory4lbl.Font = Enum.Font.Gotham
+Factory4lbl.Text = "Factory 4"
+Factory4lbl.TextColor3 = Color3.fromRGB(255, 0, 127)
+Factory4lbl.TextSize = 13.000
+
+Factory1.Name = "Factory1"
+Factory1.Parent = Main
+Factory1.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Factory1.BackgroundTransparency = 1.000
+Factory1.BorderSizePixel = 0
+Factory1.Position = UDim2.new(0.484455466, 0, 0.259225607, 0)
+Factory1.Size = UDim2.new(0, 103, 0, 34)
+Factory1.Font = Enum.Font.Gotham
+Factory1.Text = "Set JumpPower"
+Factory1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Factory1.TextSize = 14.000
+
+Factory1round.Name = "Factory1round"
+Factory1round.Parent = Factory1
+Factory1round.Active = true
+Factory1round.AnchorPoint = Vector2.new(0.5, 0.5)
+Factory1round.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Factory1round.BackgroundTransparency = 1.000
+Factory1round.Position = UDim2.new(0.495462656, 0, 0.51531446, 0)
+Factory1round.Selectable = true
+Factory1round.Size = UDim2.new(1.00980031, 0, 1.03062916, 0)
+Factory1round.Image = "rbxassetid://3570695787"
+Factory1round.ImageColor3 = Color3.fromRGB(29, 29, 29)
+Factory1round.ScaleType = Enum.ScaleType.Slice
+Factory1round.SliceCenter = Rect.new(100, 100, 100, 100)
+Factory1round.SliceScale = 0.060
+
+Factory1lbl.Name = "Factory1lbl"
+Factory1lbl.Parent = Factory1
+Factory1lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Factory1lbl.BackgroundTransparency = 1.000
+Factory1lbl.Position = UDim2.new(-0.00943733845, 0, 0.0381712057, 0)
+Factory1lbl.Size = UDim2.new(0, 103, 0, 31)
+Factory1lbl.Font = Enum.Font.Gotham
+Factory1lbl.Text = "Factory 1"
+Factory1lbl.TextColor3 = Color3.fromRGB(255, 0, 127)
+Factory1lbl.TextSize = 13.000
+
+Factory6.Name = "Factory6"
+Factory6.Parent = Main
+Factory6.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Factory6.BackgroundTransparency = 1.000
+Factory6.BorderSizePixel = 0
+Factory6.Position = UDim2.new(0.715547919, 0, 0.539631069, 0)
+Factory6.Size = UDim2.new(0, 103, 0, 34)
+Factory6.Font = Enum.Font.Gotham
+Factory6.Text = "Set JumpPower"
+Factory6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Factory6.TextSize = 14.000
+
+Factory6round.Name = "Factory6round"
+Factory6round.Parent = Factory6
+Factory6round.Active = true
+Factory6round.AnchorPoint = Vector2.new(0.5, 0.5)
+Factory6round.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Factory6round.BackgroundTransparency = 1.000
+Factory6round.Position = UDim2.new(0.495462656, 0, 0.51531446, 0)
+Factory6round.Selectable = true
+Factory6round.Size = UDim2.new(1.00980031, 0, 1.03062916, 0)
+Factory6round.Image = "rbxassetid://3570695787"
+Factory6round.ImageColor3 = Color3.fromRGB(29, 29, 29)
+Factory6round.ScaleType = Enum.ScaleType.Slice
+Factory6round.SliceCenter = Rect.new(100, 100, 100, 100)
+Factory6round.SliceScale = 0.060
+
+Factory6lbl.Name = "Factory6lbl"
+Factory6lbl.Parent = Factory6
+Factory6lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Factory6lbl.BackgroundTransparency = 1.000
+Factory6lbl.Position = UDim2.new(-0.00943733845, 0, 0.0381712057, 0)
+Factory6lbl.Size = UDim2.new(0, 103, 0, 31)
+Factory6lbl.Font = Enum.Font.Gotham
+Factory6lbl.Text = "Factory 6"
+Factory6lbl.TextColor3 = Color3.fromRGB(255, 0, 127)
+Factory6lbl.TextSize = 13.000
+
+Factory5.Name = "Factory5"
+Factory5.Parent = Main
+Factory5.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Factory5.BackgroundTransparency = 1.000
+Factory5.BorderSizePixel = 0
+Factory5.Position = UDim2.new(0.484455466, 0, 0.539631009, 0)
+Factory5.Size = UDim2.new(0, 103, 0, 34)
+Factory5.Font = Enum.Font.Gotham
+Factory5.Text = "Set JumpPower"
+Factory5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Factory5.TextSize = 14.000
+
+Factory5round.Name = "Factory5round"
+Factory5round.Parent = Factory5
+Factory5round.Active = true
+Factory5round.AnchorPoint = Vector2.new(0.5, 0.5)
+Factory5round.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Factory5round.BackgroundTransparency = 1.000
+Factory5round.Position = UDim2.new(0.495462656, 0, 0.51531446, 0)
+Factory5round.Selectable = true
+Factory5round.Size = UDim2.new(1.00980031, 0, 1.03062916, 0)
+Factory5round.Image = "rbxassetid://3570695787"
+Factory5round.ImageColor3 = Color3.fromRGB(29, 29, 29)
+Factory5round.ScaleType = Enum.ScaleType.Slice
+Factory5round.SliceCenter = Rect.new(100, 100, 100, 100)
+Factory5round.SliceScale = 0.060
+
+Factory5lbl.Name = "Factory5lbl"
+Factory5lbl.Parent = Factory5
+Factory5lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Factory5lbl.BackgroundTransparency = 1.000
+Factory5lbl.Position = UDim2.new(-0.00943733845, 0, 0.0381712057, 0)
+Factory5lbl.Size = UDim2.new(0, 103, 0, 31)
+Factory5lbl.Font = Enum.Font.Gotham
+Factory5lbl.Text = "Factory 5"
+Factory5lbl.TextColor3 = Color3.fromRGB(255, 0, 127)
+Factory5lbl.TextSize = 13.000
+
+Factory3.Name = "Factory3"
+Factory3.Parent = Main
+Factory3.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Factory3.BackgroundTransparency = 1.000
+Factory3.BorderSizePixel = 0
+Factory3.Position = UDim2.new(0.484455466, 0, 0.401117504, 0)
+Factory3.Size = UDim2.new(0, 103, 0, 34)
+Factory3.Font = Enum.Font.Gotham
+Factory3.Text = "Set JumpPower"
+Factory3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Factory3.TextSize = 14.000
+
+Factory3round.Name = "Factory3round"
+Factory3round.Parent = Factory3
+Factory3round.Active = true
+Factory3round.AnchorPoint = Vector2.new(0.5, 0.5)
+Factory3round.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Factory3round.BackgroundTransparency = 1.000
+Factory3round.Position = UDim2.new(0.495462656, 0, 0.51531446, 0)
+Factory3round.Selectable = true
+Factory3round.Size = UDim2.new(1.00980031, 0, 1.03062916, 0)
+Factory3round.Image = "rbxassetid://3570695787"
+Factory3round.ImageColor3 = Color3.fromRGB(29, 29, 29)
+Factory3round.ScaleType = Enum.ScaleType.Slice
+Factory3round.SliceCenter = Rect.new(100, 100, 100, 100)
+Factory3round.SliceScale = 0.060
+
+Factory3lbl.Name = "Factory3lbl"
+Factory3lbl.Parent = Factory3
+Factory3lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Factory3lbl.BackgroundTransparency = 1.000
+Factory3lbl.Position = UDim2.new(-0.00943733845, 0, 0.0381712057, 0)
+Factory3lbl.Size = UDim2.new(0, 103, 0, 31)
+Factory3lbl.Font = Enum.Font.Gotham
+Factory3lbl.Text = "Factory 3"
+Factory3lbl.TextColor3 = Color3.fromRGB(255, 0, 127)
+Factory3lbl.TextSize = 13.000
+
+FactoryTele.Name = "FactoryTele"
+FactoryTele.Parent = Main
+FactoryTele.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FactoryTele.BackgroundTransparency = 1.000
+FactoryTele.Position = UDim2.new(0.568175077, 0, 0.131282195, 0)
+FactoryTele.Size = UDim2.new(0, 133, 0, 27)
+FactoryTele.Font = Enum.Font.Gotham
+FactoryTele.Text = "Factory Teleports"
+FactoryTele.TextColor3 = Color3.fromRGB(255, 0, 127)
+FactoryTele.TextSize = 15.000
+
+line_2.Name = "line"
+line_2.Parent = Main
+line_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+line_2.BackgroundTransparency = 1.000
+line_2.Position = UDim2.new(0.0263073537, 0, 0.198205739, 0)
+line_2.Size = UDim2.new(0, 195, 0, 8)
+line_2.Font = Enum.Font.SourceSans
+line_2.Text = "-----------------------"
+line_2.TextColor3 = Color3.fromRGB(255, 0, 127)
+line_2.TextSize = 20.000
+
+JP10.Name = "JP+10"
+JP10.Parent = Main
+JP10.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+JP10.BackgroundTransparency = 1.000
+JP10.BorderSizePixel = 0
+JP10.Position = UDim2.new(0.12311092, 0, 0.546387672, 0)
+JP10.Size = UDim2.new(0, 103, 0, 34)
+JP10.Font = Enum.Font.Gotham
+JP10.Text = "Set JumpPower"
+JP10.TextColor3 = Color3.fromRGB(255, 255, 255)
+JP10.TextSize = 14.000
+
+Jpround.Name = "Jpround"
+Jpround.Parent = JP10
+Jpround.Active = true
+Jpround.AnchorPoint = Vector2.new(0.5, 0.5)
+Jpround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Jpround.BackgroundTransparency = 1.000
+Jpround.Position = UDim2.new(0.495462656, 0, 0.51531446, 0)
+Jpround.Selectable = true
+Jpround.Size = UDim2.new(1.00980031, 0, 1.03062916, 0)
+Jpround.Image = "rbxassetid://3570695787"
+Jpround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+Jpround.ScaleType = Enum.ScaleType.Slice
+Jpround.SliceCenter = Rect.new(100, 100, 100, 100)
+Jpround.SliceScale = 0.060
+
+Jplbl.Name = "Jplbl"
+Jplbl.Parent = JP10
+Jplbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Jplbl.BackgroundTransparency = 1.000
+Jplbl.Position = UDim2.new(-0.00943733845, 0, 0.0381712057, 0)
+Jplbl.Size = UDim2.new(0, 103, 0, 31)
+Jplbl.Font = Enum.Font.Gotham
+Jplbl.Text = "JumpPower +10"
+Jplbl.TextColor3 = Color3.fromRGB(255, 0, 127)
+Jplbl.TextSize = 13.000
+
+Misc.Name = "Misc"
+Misc.Parent = Main
+Misc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Misc.BackgroundTransparency = 1.000
+Misc.Position = UDim2.new(0.358091027, 0, 0.722498417, 0)
+Misc.Size = UDim2.new(0, 133, 0, 27)
+Misc.Font = Enum.Font.Gotham
+Misc.Text = "Misc"
+Misc.TextColor3 = Color3.fromRGB(255, 0, 127)
+Misc.TextSize = 15.000
+
+line_3.Name = "line"
+line_3.Parent = Main
+line_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+line_3.BackgroundTransparency = 1.000
+line_3.Position = UDim2.new(0.293114066, 0, 0.789421916, 0)
+line_3.Size = UDim2.new(0, 195, 0, 8)
+line_3.Font = Enum.Font.SourceSans
+line_3.Text = "--------------------------------------------"
+line_3.TextColor3 = Color3.fromRGB(255, 0, 127)
+line_3.TextSize = 20.000
+
+Carftsman.Name = "Carftsman"
+Carftsman.Parent = Main
+Carftsman.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Carftsman.BackgroundTransparency = 1.000
+Carftsman.BorderSizePixel = 0
+Carftsman.Position = UDim2.new(0.719592512, 0, 0.854826212, 0)
+Carftsman.Size = UDim2.new(0, 95, 0, 32)
+Carftsman.Font = Enum.Font.Gotham
+Carftsman.Text = ""
+Carftsman.TextColor3 = Color3.fromRGB(255, 255, 255)
+Carftsman.TextSize = 14.000
+
+Carftsmanround.Name = "Carftsmanround"
+Carftsmanround.Parent = Carftsman
+Carftsmanround.Active = true
+Carftsmanround.AnchorPoint = Vector2.new(0.5, 0.5)
+Carftsmanround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Carftsmanround.BackgroundTransparency = 1.000
+Carftsmanround.Position = UDim2.new(0.501021683, 0, 0.527242661, 0)
+Carftsmanround.Selectable = true
+Carftsmanround.Size = UDim2.new(1.00009811, 0, 1.05448556, 0)
+Carftsmanround.Image = "rbxassetid://3570695787"
+Carftsmanround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+Carftsmanround.ScaleType = Enum.ScaleType.Slice
+Carftsmanround.SliceCenter = Rect.new(100, 100, 100, 100)
+Carftsmanround.SliceScale = 0.060
+
+Carftsmanlbl.Name = "Carftsmanlbl"
+Carftsmanlbl.Parent = Carftsman
+Carftsmanlbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Carftsmanlbl.BackgroundTransparency = 1.000
+Carftsmanlbl.Position = UDim2.new(0.000972747803, 0, 0.0390558243, 0)
+Carftsmanlbl.Size = UDim2.new(0, 95, 0, 29)
+Carftsmanlbl.Font = Enum.Font.Gotham
+Carftsmanlbl.Text = "The Craftsman"
+Carftsmanlbl.TextColor3 = Color3.fromRGB(255, 0, 127)
+Carftsmanlbl.TextSize = 11.000
+
+SpookMcDooks.Name = "SpookMcDooks"
+SpookMcDooks.Parent = Main
+SpookMcDooks.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+SpookMcDooks.BackgroundTransparency = 1.000
+SpookMcDooks.BorderSizePixel = 0
+SpookMcDooks.Position = UDim2.new(0.5053069, 0, 0.854826152, 0)
+SpookMcDooks.Size = UDim2.new(0, 95, 0, 32)
+SpookMcDooks.Font = Enum.Font.Gotham
+SpookMcDooks.Text = ""
+SpookMcDooks.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpookMcDooks.TextSize = 14.000
+
+McDooksround.Name = "McDooksround"
+McDooksround.Parent = SpookMcDooks
+McDooksround.Active = true
+McDooksround.AnchorPoint = Vector2.new(0.5, 0.5)
+McDooksround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+McDooksround.BackgroundTransparency = 1.000
+McDooksround.Position = UDim2.new(0.501021683, 0, 0.527242661, 0)
+McDooksround.Selectable = true
+McDooksround.Size = UDim2.new(1.00009811, 0, 1.05448556, 0)
+McDooksround.Image = "rbxassetid://3570695787"
+McDooksround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+McDooksround.ScaleType = Enum.ScaleType.Slice
+McDooksround.SliceCenter = Rect.new(100, 100, 100, 100)
+McDooksround.SliceScale = 0.060
+
+McDookslbl.Name = "McDookslbl"
+McDookslbl.Parent = SpookMcDooks
+McDookslbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+McDookslbl.BackgroundTransparency = 1.000
+McDookslbl.Position = UDim2.new(0.000972747803, 0, 0.0390558243, 0)
+McDookslbl.Size = UDim2.new(0, 95, 0, 29)
+McDookslbl.Font = Enum.Font.Gotham
+McDookslbl.Text = "Spook McDooks"
+McDookslbl.TextColor3 = Color3.fromRGB(255, 0, 127)
+McDookslbl.TextSize = 11.000
+
+Fargield.Name = "Fargield"
+Fargield.Parent = Main
+Fargield.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Fargield.BackgroundTransparency = 1.000
+Fargield.BorderSizePixel = 0
+Fargield.Position = UDim2.new(0.288920343, 0, 0.854826152, 0)
+Fargield.Size = UDim2.new(0, 95, 0, 32)
+Fargield.Font = Enum.Font.Gotham
+Fargield.Text = ""
+Fargield.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fargield.TextSize = 14.000
+
+Fargieldround.Name = "Fargieldround"
+Fargieldround.Parent = Fargield
+Fargieldround.Active = true
+Fargieldround.AnchorPoint = Vector2.new(0.5, 0.5)
+Fargieldround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fargieldround.BackgroundTransparency = 1.000
+Fargieldround.Position = UDim2.new(0.501021683, 0, 0.527242661, 0)
+Fargieldround.Selectable = true
+Fargieldround.Size = UDim2.new(1.00009811, 0, 1.05448556, 0)
+Fargieldround.Image = "rbxassetid://3570695787"
+Fargieldround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+Fargieldround.ScaleType = Enum.ScaleType.Slice
+Fargieldround.SliceCenter = Rect.new(100, 100, 100, 100)
+Fargieldround.SliceScale = 0.060
+
+Fargieldlbl.Name = "Fargieldlbl"
+Fargieldlbl.Parent = Fargield
+Fargieldlbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fargieldlbl.BackgroundTransparency = 1.000
+Fargieldlbl.Position = UDim2.new(0.000972747803, 0, 0.0390558243, 0)
+Fargieldlbl.Size = UDim2.new(0, 95, 0, 29)
+Fargieldlbl.Font = Enum.Font.Gotham
+Fargieldlbl.Text = "Fargield"
+Fargieldlbl.TextColor3 = Color3.fromRGB(255, 0, 127)
+Fargieldlbl.TextSize = 11.000
+
+MaskedMan.Name = "MaskedMan"
+MaskedMan.Parent = Main
+MaskedMan.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+MaskedMan.BackgroundTransparency = 1.000
+MaskedMan.BorderSizePixel = 0
+MaskedMan.Position = UDim2.new(0.0725337863, 0, 0.854826152, 0)
+MaskedMan.Size = UDim2.new(0, 95, 0, 32)
+MaskedMan.Font = Enum.Font.Gotham
+MaskedMan.Text = ""
+MaskedMan.TextColor3 = Color3.fromRGB(255, 255, 255)
+MaskedMan.TextSize = 14.000
+
+MaskedManround.Name = "MaskedManround"
+MaskedManround.Parent = MaskedMan
+MaskedManround.Active = true
+MaskedManround.AnchorPoint = Vector2.new(0.5, 0.5)
+MaskedManround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MaskedManround.BackgroundTransparency = 1.000
+MaskedManround.Position = UDim2.new(0.501021683, 0, 0.527242661, 0)
+MaskedManround.Selectable = true
+MaskedManround.Size = UDim2.new(1.00009811, 0, 1.05448556, 0)
+MaskedManround.Image = "rbxassetid://3570695787"
+MaskedManround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+MaskedManround.ScaleType = Enum.ScaleType.Slice
+MaskedManround.SliceCenter = Rect.new(100, 100, 100, 100)
+MaskedManround.SliceScale = 0.060
+
+MaskedManlbl.Name = "MaskedManlbl"
+MaskedManlbl.Parent = MaskedMan
+MaskedManlbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MaskedManlbl.BackgroundTransparency = 1.000
+MaskedManlbl.Position = UDim2.new(0.000972747803, 0, 0.0390558243, 0)
+MaskedManlbl.Size = UDim2.new(0, 95, 0, 29)
+MaskedManlbl.Font = Enum.Font.Gotham
+MaskedManlbl.Text = "Masked Man"
+MaskedManlbl.TextColor3 = Color3.fromRGB(255, 0, 127)
+MaskedManlbl.TextSize = 11.000
+
+Opengui.Name = "Opengui"
+Opengui.Parent = MinersHavenGUI
+Opengui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Opengui.BackgroundTransparency = 1.000
+Opengui.Position = UDim2.new(-0.000681728125, 0, 0.778869748, 0)
+Opengui.Size = UDim2.new(0, 61, 0, 35)
+Opengui.Visible = false
+Opengui.Image = "rbxassetid://3570695787"
+Opengui.ImageColor3 = Color3.fromRGB(30, 30, 30)
+Opengui.ScaleType = Enum.ScaleType.Slice
+Opengui.SliceCenter = Rect.new(100, 100, 100, 100)
+Opengui.SliceScale = 0.060
+
+open.Name = "open"
+open.Parent = Opengui
+open.BackgroundTransparency = 1.000
+open.LayoutOrder = 13
+open.Position = UDim2.new(0.016372649, 0, 0, 0)
+open.Size = UDim2.new(0, 60, 0, 35)
+open.ZIndex = 2
+open.Image = "rbxassetid://3926305904"
+open.ImageColor3 = Color3.fromRGB(255, 0, 127)
+open.ImageRectOffset = Vector2.new(444, 844)
+open.ImageRectSize = Vector2.new(36, 36)
+
+--Scripts:
+
+Close.MouseButton1Click:Connect(function()
+	Main.Visible = false
+	Opengui.Visible = true
+end)
+
+open.MouseButton1Click:Connect(function()
+	Main.Visible = true
+	Opengui.Visible = false
+end)
+
+WS10.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed + 10	
+end)
+
+JP10.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = game.Players.LocalPlayer.Character.Humanoid.JumpPower + 10
+end)
+
+BoxTp.MouseButton1Click:Connect(function()
+	local CollectMe = { --Just add more!
+		"Pumpkin";
+		"MegaPumpkin";
+		"CandyCorn";
+		"Research";
+		"Diamond";
+		"Golden";
+		"Lucky";
+		"Shadow";
+		"Crystal";
+	}
+	for i,v in pairs(game.Workspace:GetChildren()) do
+		if table.find(CollectMe, v.Name) then
+			repeat wait()
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame    
+			until v == nil or not game.Workspace:FindFirstChild(v)
+			wait(0.2)
+		end
+	end
+end)
+
+Factory1.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.FakeBases.Factory1.CFrame*CFrame.new(0,50,0)
+end)
+
+Factory2.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.FakeBases.Factory2.CFrame*CFrame.new(0,50,0)
+end)
+
+Factory3.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.FakeBases.Factory3.CFrame*CFrame.new(0,50,0)
+end)
+
+Factory4.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.FakeBases.Factory4.CFrame*CFrame.new(0,50,0)
+end)
+
+Factory5.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.FakeBases.Factory5.CFrame*CFrame.new(0,50,0)
+end)
+
+Factory6.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.FakeBases.Factory6.CFrame*CFrame.new(0,50,0)
+end)
+
+MaskedMan.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.PlayerGui.GUI.EventShop.Visible = true
+end)
+
+Fargield.MouseButton1Click:Connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-321.605652, 103.740891, 524.223877)
+end)
+
+SpookMcDooks.MouseButton1Click:Connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-352.932861, 47.5191498, 1341.40283)
+end)
+
+Carftsman.MouseButton1Click:Connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-140.088943, 224.527908, 225.750061)
+end)
