@@ -1,0 +1,203 @@
+if game.CoreGui:FindFirstChild("Set WS & JP") then
+	game.CoreGui["Set WS & JP"]:Destory()
+end
+
+local SetWSJP = Instance.new("ScreenGui")
+local Main = Instance.new("ImageLabel")
+local TITLE = Instance.new("TextLabel")
+local Close = Instance.new("ImageButton")
+local WSTextBox = Instance.new("TextBox")
+local JPTextBox = Instance.new("TextBox")
+local SetJp = Instance.new("TextButton")
+local SetJpRound = Instance.new("ImageLabel")
+local SetJPlbl = Instance.new("TextLabel")
+local SetWS = Instance.new("TextButton")
+local SetWSround = Instance.new("ImageLabel")
+local SetWSlbl = Instance.new("TextLabel")
+local Opengui = Instance.new("ImageLabel")
+local openbtn = Instance.new("ImageButton")
+
+
+
+SetWSJP.Name = "Set WS & JP"
+SetWSJP.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = SetWSJP
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(0.263223648, 0, 0.288697779, 0)
+Main.Size = UDim2.new(0, 199, 0, 208)
+Main.Image = "rbxassetid://3570695787"
+Main.ImageColor3 = Color3.fromRGB(24, 24, 24)
+Main.ScaleType = Enum.ScaleType.Slice
+Main.SliceCenter = Rect.new(100, 100, 100, 100)
+Main.SliceScale = 0.120
+Main.Draggable = true
+
+TITLE.Name = "TITLE"
+TITLE.Parent = Main
+TITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TITLE.BackgroundTransparency = 1.000
+TITLE.Position = UDim2.new(-0.150753766, 0, 0.00290697673, 0)
+TITLE.Size = UDim2.new(0, 159, 0, 27)
+TITLE.Font = Enum.Font.Gotham
+TITLE.Text = "Set WS & JP"
+TITLE.TextColor3 = Color3.fromRGB(255, 255, 255)
+TITLE.TextSize = 14.000
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.842613459, 0, 0.00775669888, 0)
+Close.Size = UDim2.new(0, 25, 0, 25)
+Close.ZIndex = 2
+Close.Image = "rbxassetid://3926307971"
+Close.ImageRectOffset = Vector2.new(884, 284)
+Close.ImageRectSize = Vector2.new(36, 36)
+
+WSTextBox.Name = "WSTextBox"
+WSTextBox.Parent = Main
+WSTextBox.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+WSTextBox.BorderSizePixel = 0
+WSTextBox.Position = UDim2.new(0.226130649, 0, 0.778846204, 0)
+WSTextBox.Size = UDim2.new(0, 109, 0, 29)
+WSTextBox.ClearTextOnFocus = true
+WSTextBox.Font = Enum.Font.Gotham
+WSTextBox.Text = "Input Speed"
+WSTextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+WSTextBox.TextSize = 14.000
+WSTextBox.TextWrapped = true
+
+JPTextBox.Name = "JPTextBox"
+JPTextBox.Parent = Main
+JPTextBox.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+JPTextBox.BorderSizePixel = 0
+JPTextBox.Position = UDim2.new(0.226130649, 0, 0.370192319, 0)
+JPTextBox.Size = UDim2.new(0, 109, 0, 29)
+JPTextBox.ClearTextOnFocus = true
+JPTextBox.Font = Enum.Font.Gotham
+JPTextBox.Text = "Input Power"
+JPTextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+JPTextBox.TextSize = 14.000
+JPTextBox.TextWrapped = true
+
+SetJp.Name = "SetJp"
+SetJp.Parent = Main
+SetJp.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+SetJp.BackgroundTransparency = 1.000
+SetJp.BorderSizePixel = 0
+SetJp.Position = UDim2.new(0.226130649, 0, 0.206730768, 0)
+SetJp.Size = UDim2.new(0, 109, 0, 27)
+SetJp.Font = Enum.Font.Gotham
+SetJp.Text = "Set JumpPower"
+SetJp.TextColor3 = Color3.fromRGB(255, 255, 255)
+SetJp.TextSize = 14.000
+
+SetJpRound.Name = "SetJpRound"
+SetJpRound.Parent = SetJp
+SetJpRound.Active = true
+SetJpRound.AnchorPoint = Vector2.new(0.5, 0.5)
+SetJpRound.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SetJpRound.BackgroundTransparency = 1.000
+SetJpRound.Position = UDim2.new(0.5, 0, 0.5, 0)
+SetJpRound.Selectable = true
+SetJpRound.Size = UDim2.new(1, 0, 1, 0)
+SetJpRound.Image = "rbxassetid://3570695787"
+SetJpRound.ImageColor3 = Color3.fromRGB(35, 35, 35)
+SetJpRound.ScaleType = Enum.ScaleType.Slice
+SetJpRound.SliceCenter = Rect.new(100, 100, 100, 100)
+SetJpRound.SliceScale = 0.060
+
+SetJPlbl.Name = "SetJPlbl"
+SetJPlbl.Parent = SetJp
+SetJPlbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SetJPlbl.BackgroundTransparency = 1.000
+SetJPlbl.Position = UDim2.new(0, 0, 0.0370370373, 0)
+SetJPlbl.Size = UDim2.new(0, 109, 0, 25)
+SetJPlbl.Font = Enum.Font.Gotham
+SetJPlbl.Text = "Set JumpPower"
+SetJPlbl.TextColor3 = Color3.fromRGB(255, 255, 255)
+SetJPlbl.TextSize = 13.000
+
+SetWS.Name = "SetWS"
+SetWS.Parent = Main
+SetWS.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+SetWS.BackgroundTransparency = 1.000
+SetWS.BorderSizePixel = 0
+SetWS.Position = UDim2.new(0.226130649, 0, 0.610576928, 0)
+SetWS.Size = UDim2.new(0, 109, 0, 27)
+SetWS.Font = Enum.Font.Gotham
+SetWS.Text = "Set JumpPower"
+SetWS.TextColor3 = Color3.fromRGB(255, 255, 255)
+SetWS.TextSize = 14.000
+
+SetWSround.Name = "SetWSround"
+SetWSround.Parent = SetWS
+SetWSround.Active = true
+SetWSround.AnchorPoint = Vector2.new(0.5, 0.5)
+SetWSround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SetWSround.BackgroundTransparency = 1.000
+SetWSround.Position = UDim2.new(0.5, 0, 0.5, 0)
+SetWSround.Selectable = true
+SetWSround.Size = UDim2.new(1, 0, 1, 0)
+SetWSround.Image = "rbxassetid://3570695787"
+SetWSround.ImageColor3 = Color3.fromRGB(35, 35, 35)
+SetWSround.ScaleType = Enum.ScaleType.Slice
+SetWSround.SliceCenter = Rect.new(100, 100, 100, 100)
+SetWSround.SliceScale = 0.060
+
+SetWSlbl.Name = "SetWSlbl"
+SetWSlbl.Parent = SetWS
+SetWSlbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SetWSlbl.BackgroundTransparency = 1.000
+SetWSlbl.Position = UDim2.new(0, 0, 0.0370370373, 0)
+SetWSlbl.Size = UDim2.new(0, 109, 0, 25)
+SetWSlbl.Font = Enum.Font.Gotham
+SetWSlbl.Text = "Set WalkSpeed"
+SetWSlbl.TextColor3 = Color3.fromRGB(255, 255, 255)
+SetWSlbl.TextSize = 13.000
+
+Opengui.Name = "Opengui"
+Opengui.Parent = SetWSJP
+Opengui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Opengui.BackgroundTransparency = 1.000
+Opengui.Position = UDim2.new(0.0634820908, 0, 0.957002461, 0)
+Opengui.Size = UDim2.new(0, 61, 0, 35)
+Opengui.Visible = false
+Opengui.Image = "rbxassetid://3570695787"
+Opengui.ImageColor3 = Color3.fromRGB(30, 30, 30)
+Opengui.ScaleType = Enum.ScaleType.Slice
+Opengui.SliceCenter = Rect.new(100, 100, 100, 100)
+Opengui.SliceScale = 0.060
+
+openbtn.Name = "openbtn"
+openbtn.Parent = Opengui
+openbtn.BackgroundTransparency = 1.000
+openbtn.Position = UDim2.new(0.196721315, 0, 0.0571428575, 0)
+openbtn.Size = UDim2.new(0, 37, 0, 30)
+openbtn.ZIndex = 2
+openbtn.Image = "rbxassetid://3926305904"
+openbtn.ImageRectOffset = Vector2.new(164, 284)
+openbtn.ImageRectSize = Vector2.new(36, 36)
+
+--Scripts:
+
+Close.MouseButton1Click:Connect(function()
+	Main.Visible = false
+	Opengui.Visible = true
+end)
+
+openbtn.MouseButton1Click:Connect(function()
+	Main.Visible = true
+	Opengui.Visible = false
+end)
+
+SetWS.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = WSTextBox.Text
+end)
+
+SetJp.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = JPTextBox.Text
+end)
