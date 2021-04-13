@@ -1,0 +1,1115 @@
+if game.CoreGui:FindFirstChild("PrisonHub") then
+	game.CoreGui["PrisonHub"]:Destory()
+end
+
+local PrisonHub = Instance.new("ScreenGui")
+local Main = Instance.new("ImageLabel")
+local TITLE = Instance.new("TextLabel")
+local Close = Instance.new("ImageButton")
+local TITLEUnderline = Instance.new("TextLabel")
+local Teleportlbl = Instance.new("TextLabel")
+local TeleportUnderline = Instance.new("TextLabel")
+local insidePrison = Instance.new("TextButton")
+local InsidePrisonround = Instance.new("ImageLabel")
+local InsidePrisonlbl = Instance.new("TextLabel")
+local outsidePrison = Instance.new("TextButton")
+local OutsidePrisonround = Instance.new("ImageLabel")
+local OutsidePrisonlbl = Instance.new("TextLabel")
+local armory = Instance.new("TextButton")
+local Armoryround = Instance.new("ImageLabel")
+local Armorylbl = Instance.new("TextLabel")
+local criminal = Instance.new("TextButton")
+local Criminalround = Instance.new("ImageLabel")
+local Criminallbl = Instance.new("TextLabel")
+local MainFunctionslbl = Instance.new("TextLabel")
+local MainFunctionsUnderline = Instance.new("TextLabel")
+local cafeteria = Instance.new("TextButton")
+local Cafeteriaround = Instance.new("ImageLabel")
+local Cafeterialbl = Instance.new("TextLabel")
+local yard = Instance.new("TextButton")
+local Yardround = Instance.new("ImageLabel")
+local Yardlbl = Instance.new("TextLabel")
+local arrestCrims = Instance.new("TextButton")
+local arrestCrimsround = Instance.new("ImageLabel")
+local arrestCrimslbl = Instance.new("TextLabel")
+local killAura = Instance.new("TextButton")
+local KillAuraround = Instance.new("ImageLabel")
+local KillAuralbl = Instance.new("TextLabel")
+local giveGuns = Instance.new("TextButton")
+local giveGunsround = Instance.new("ImageLabel")
+local giveGunslbl = Instance.new("TextLabel")
+local meleeweapons = Instance.new("TextButton")
+local MeleeWeaponsround = Instance.new("ImageLabel")
+local MeleeWeaponslbl = Instance.new("TextLabel")
+local removeDoors = Instance.new("TextButton")
+local RemoveDoorsround = Instance.new("ImageLabel")
+local RemoveDoorslbl = Instance.new("TextLabel")
+local bTools = Instance.new("TextButton")
+local BToolsround = Instance.new("ImageLabel")
+local BToolslbl = Instance.new("TextLabel")
+local RapidFire = Instance.new("TextLabel")
+local TeleportUnderline_2 = Instance.new("TextLabel")
+local remington870 = Instance.new("TextButton")
+local remington870round = Instance.new("ImageLabel")
+local remington870lbl = Instance.new("TextLabel")
+local ak47 = Instance.new("TextButton")
+local Ak47round = Instance.new("ImageLabel")
+local Ak47lbl = Instance.new("TextLabel")
+local m9 = Instance.new("TextButton")
+local m9round = Instance.new("ImageLabel")
+local m9lbl = Instance.new("TextLabel")
+local Opengui = Instance.new("ImageLabel")
+local open = Instance.new("ImageButton")
+
+PrisonHub.Name = "Prison Hub"
+PrisonHub.Parent = game.CoreGui
+PrisonHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = PrisonHub
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(0.344988763, 0, 0.318181813, 0)
+Main.Size = UDim2.new(0, 476, 0, 296)
+Main.Image = "rbxassetid://3570695787"
+Main.ImageColor3 = Color3.fromRGB(20, 20, 20)
+Main.ScaleType = Enum.ScaleType.Slice
+Main.SliceCenter = Rect.new(100, 100, 100, 100)
+Main.SliceScale = 0.120
+Main.Draggable = true
+
+TITLE.Name = "TITLE"
+TITLE.Parent = Main
+TITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TITLE.BackgroundTransparency = 1.000
+TITLE.Position = UDim2.new(-0.0751235187, 0, -0.000471401727, 0)
+TITLE.Size = UDim2.new(0, 159, 0, 27)
+TITLE.Font = Enum.Font.GothamBlack
+TITLE.Text = "Prison Life"
+TITLE.TextColor3 = Color3.fromRGB(227, 75, 0)
+TITLE.TextSize = 14.000
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.932949543, 0, -0.00237843581, 0)
+Close.Size = UDim2.new(0, 25, 0, 25)
+Close.ZIndex = 2
+Close.Image = "rbxassetid://3926307971"
+Close.ImageColor3 = Color3.fromRGB(227, 75, 0)
+Close.ImageRectOffset = Vector2.new(884, 284)
+Close.ImageRectSize = Vector2.new(36, 36)
+
+TITLEUnderline.Name = "TITLEUnderline"
+TITLEUnderline.Parent = Main
+TITLEUnderline.BackgroundColor3 = Color3.fromRGB(227, 75, 0)
+TITLEUnderline.BorderSizePixel = 0
+TITLEUnderline.Position = UDim2.new(0.00100000005, 0, 0.0820000023, 0)
+TITLEUnderline.Size = UDim2.new(0, 476, 0, 2)
+TITLEUnderline.Font = Enum.Font.SourceSans
+TITLEUnderline.Text = ""
+TITLEUnderline.TextColor3 = Color3.fromRGB(0, 0, 0)
+TITLEUnderline.TextSize = 14.000
+
+Teleportlbl.Name = "Teleportlbl"
+Teleportlbl.Parent = Main
+Teleportlbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Teleportlbl.BackgroundTransparency = 1.000
+Teleportlbl.Position = UDim2.new(0.0685473531, 0, 0.114393495, 0)
+Teleportlbl.Size = UDim2.new(0, 173, 0, 27)
+Teleportlbl.Font = Enum.Font.GothamBlack
+Teleportlbl.Text = "Teleports"
+Teleportlbl.TextColor3 = Color3.fromRGB(227, 75, 0)
+Teleportlbl.TextSize = 14.000
+
+TeleportUnderline.Name = "TeleportUnderline"
+TeleportUnderline.Parent = Teleportlbl
+TeleportUnderline.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeleportUnderline.BackgroundTransparency = 1.000
+TeleportUnderline.Position = UDim2.new(0.000509449514, 0, 0.228882968, 0)
+TeleportUnderline.Size = UDim2.new(0, 173, 0, 27)
+TeleportUnderline.Font = Enum.Font.GothamBlack
+TeleportUnderline.Text = "____________"
+TeleportUnderline.TextColor3 = Color3.fromRGB(227, 75, 0)
+TeleportUnderline.TextSize = 14.000
+
+insidePrison.Name = "insidePrison"
+insidePrison.Parent = Main
+insidePrison.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+insidePrison.BackgroundTransparency = 1.000
+insidePrison.BorderSizePixel = 0
+insidePrison.Position = UDim2.new(0.070216842, 0, 0.228820175, 0)
+insidePrison.Size = UDim2.new(0, 83, 0, 35)
+insidePrison.Font = Enum.Font.Gotham
+insidePrison.Text = ""
+insidePrison.TextColor3 = Color3.fromRGB(255, 255, 255)
+insidePrison.TextSize = 14.000
+
+InsidePrisonround.Name = "InsidePrisonround"
+InsidePrisonround.Parent = insidePrison
+InsidePrisonround.Active = true
+InsidePrisonround.AnchorPoint = Vector2.new(0.5, 0.5)
+InsidePrisonround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InsidePrisonround.BackgroundTransparency = 1.000
+InsidePrisonround.Position = UDim2.new(0.502564967, 0, 0.514463603, 0)
+InsidePrisonround.Selectable = true
+InsidePrisonround.Size = UDim2.new(1.02427816, 0, 1.02892745, 0)
+InsidePrisonround.Image = "rbxassetid://3570695787"
+InsidePrisonround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+InsidePrisonround.ScaleType = Enum.ScaleType.Slice
+InsidePrisonround.SliceCenter = Rect.new(100, 100, 100, 100)
+InsidePrisonround.SliceScale = 0.060
+
+InsidePrisonlbl.Name = "InsidePrisonlbl"
+InsidePrisonlbl.Parent = insidePrison
+InsidePrisonlbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InsidePrisonlbl.BackgroundTransparency = 1.000
+InsidePrisonlbl.Position = UDim2.new(-0.00957433227, 0, 0.0381077342, 0)
+InsidePrisonlbl.Size = UDim2.new(0, 83, 0, 32)
+InsidePrisonlbl.Font = Enum.Font.Gotham
+InsidePrisonlbl.Text = "Inside Prison"
+InsidePrisonlbl.TextColor3 = Color3.fromRGB(255, 85, 0)
+InsidePrisonlbl.TextSize = 12.000
+InsidePrisonlbl.TextWrapped = true
+
+outsidePrison.Name = "outsidePrison"
+outsidePrison.Parent = Main
+outsidePrison.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+outsidePrison.BackgroundTransparency = 1.000
+outsidePrison.BorderSizePixel = 0
+outsidePrison.Position = UDim2.new(0.261393309, 0, 0.232198551, 0)
+outsidePrison.Size = UDim2.new(0, 83, 0, 35)
+outsidePrison.Font = Enum.Font.Gotham
+outsidePrison.Text = ""
+outsidePrison.TextColor3 = Color3.fromRGB(255, 255, 255)
+outsidePrison.TextSize = 14.000
+
+OutsidePrisonround.Name = "OutsidePrisonround"
+OutsidePrisonround.Parent = outsidePrison
+OutsidePrisonround.Active = true
+OutsidePrisonround.AnchorPoint = Vector2.new(0.5, 0.5)
+OutsidePrisonround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OutsidePrisonround.BackgroundTransparency = 1.000
+OutsidePrisonround.Position = UDim2.new(0.502564967, 0, 0.514463603, 0)
+OutsidePrisonround.Selectable = true
+OutsidePrisonround.Size = UDim2.new(1.02427816, 0, 1.02892745, 0)
+OutsidePrisonround.Image = "rbxassetid://3570695787"
+OutsidePrisonround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+OutsidePrisonround.ScaleType = Enum.ScaleType.Slice
+OutsidePrisonround.SliceCenter = Rect.new(100, 100, 100, 100)
+OutsidePrisonround.SliceScale = 0.060
+
+OutsidePrisonlbl.Name = "OutsidePrisonlbl"
+OutsidePrisonlbl.Parent = outsidePrison
+OutsidePrisonlbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OutsidePrisonlbl.BackgroundTransparency = 1.000
+OutsidePrisonlbl.Position = UDim2.new(-0.00957433227, 0, 0.0381077342, 0)
+OutsidePrisonlbl.Size = UDim2.new(0, 83, 0, 32)
+OutsidePrisonlbl.Font = Enum.Font.Gotham
+OutsidePrisonlbl.Text = "Outside Prison"
+OutsidePrisonlbl.TextColor3 = Color3.fromRGB(255, 85, 0)
+OutsidePrisonlbl.TextSize = 12.000
+OutsidePrisonlbl.TextWrapped = true
+
+armory.Name = "armory"
+armory.Parent = Main
+armory.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+armory.BackgroundTransparency = 1.000
+armory.BorderSizePixel = 0
+armory.Position = UDim2.new(0.0681160018, 0, 0.380847216, 0)
+armory.Size = UDim2.new(0, 83, 0, 35)
+armory.Font = Enum.Font.Gotham
+armory.Text = ""
+armory.TextColor3 = Color3.fromRGB(255, 255, 255)
+armory.TextSize = 14.000
+
+Armoryround.Name = "Armoryround"
+Armoryround.Parent = armory
+Armoryround.Active = true
+Armoryround.AnchorPoint = Vector2.new(0.5, 0.5)
+Armoryround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Armoryround.BackgroundTransparency = 1.000
+Armoryround.Position = UDim2.new(0.502564967, 0, 0.514463603, 0)
+Armoryround.Selectable = true
+Armoryround.Size = UDim2.new(1.02427816, 0, 1.02892745, 0)
+Armoryround.Image = "rbxassetid://3570695787"
+Armoryround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+Armoryround.ScaleType = Enum.ScaleType.Slice
+Armoryround.SliceCenter = Rect.new(100, 100, 100, 100)
+Armoryround.SliceScale = 0.060
+
+Armorylbl.Name = "Armorylbl"
+Armorylbl.Parent = armory
+Armorylbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Armorylbl.BackgroundTransparency = 1.000
+Armorylbl.Position = UDim2.new(-0.00957433227, 0, 0.0381077342, 0)
+Armorylbl.Size = UDim2.new(0, 83, 0, 32)
+Armorylbl.Font = Enum.Font.Gotham
+Armorylbl.Text = "Armory"
+Armorylbl.TextColor3 = Color3.fromRGB(255, 85, 0)
+Armorylbl.TextSize = 12.000
+Armorylbl.TextWrapped = true
+
+criminal.Name = "criminal"
+criminal.Parent = Main
+criminal.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+criminal.BackgroundTransparency = 1.000
+criminal.BorderSizePixel = 0
+criminal.Position = UDim2.new(0.0660151616, 0, 0.529495895, 0)
+criminal.Size = UDim2.new(0, 83, 0, 35)
+criminal.Font = Enum.Font.Gotham
+criminal.Text = ""
+criminal.TextColor3 = Color3.fromRGB(255, 255, 255)
+criminal.TextSize = 14.000
+
+Criminalround.Name = "Criminalround"
+Criminalround.Parent = criminal
+Criminalround.Active = true
+Criminalround.AnchorPoint = Vector2.new(0.5, 0.5)
+Criminalround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Criminalround.BackgroundTransparency = 1.000
+Criminalround.Position = UDim2.new(0.502564967, 0, 0.514463603, 0)
+Criminalround.Selectable = true
+Criminalround.Size = UDim2.new(1.02427816, 0, 1.02892745, 0)
+Criminalround.Image = "rbxassetid://3570695787"
+Criminalround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+Criminalround.ScaleType = Enum.ScaleType.Slice
+Criminalround.SliceCenter = Rect.new(100, 100, 100, 100)
+Criminalround.SliceScale = 0.060
+
+Criminallbl.Name = "Criminallbl"
+Criminallbl.Parent = criminal
+Criminallbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Criminallbl.BackgroundTransparency = 1.000
+Criminallbl.Position = UDim2.new(-0.00957433227, 0, 0.0381077342, 0)
+Criminallbl.Size = UDim2.new(0, 83, 0, 32)
+Criminallbl.Font = Enum.Font.Gotham
+Criminallbl.Text = "Criminal Base"
+Criminallbl.TextColor3 = Color3.fromRGB(255, 85, 0)
+Criminallbl.TextSize = 12.000
+Criminallbl.TextWrapped = true
+
+MainFunctionslbl.Name = "MainFunctionslbl"
+MainFunctionslbl.Parent = Main
+MainFunctionslbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFunctionslbl.BackgroundTransparency = 1.000
+MainFunctionslbl.Position = UDim2.new(0.564345658, 0, 0.114393495, 0)
+MainFunctionslbl.Size = UDim2.new(0, 172, 0, 27)
+MainFunctionslbl.Font = Enum.Font.GothamBlack
+MainFunctionslbl.Text = "Main Functions"
+MainFunctionslbl.TextColor3 = Color3.fromRGB(227, 75, 0)
+MainFunctionslbl.TextSize = 14.000
+
+MainFunctionsUnderline.Name = "MainFunctionsUnderline"
+MainFunctionsUnderline.Parent = MainFunctionslbl
+MainFunctionsUnderline.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFunctionsUnderline.BackgroundTransparency = 1.000
+MainFunctionsUnderline.Position = UDim2.new(0.000515250256, 0, 0.228882968, 0)
+MainFunctionsUnderline.Size = UDim2.new(0, 172, 0, 27)
+MainFunctionsUnderline.Font = Enum.Font.GothamBlack
+MainFunctionsUnderline.Text = "_________________"
+MainFunctionsUnderline.TextColor3 = Color3.fromRGB(227, 75, 0)
+MainFunctionsUnderline.TextSize = 14.000
+
+cafeteria.Name = "cafeteria"
+cafeteria.Parent = Main
+cafeteria.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+cafeteria.BackgroundTransparency = 1.000
+cafeteria.BorderSizePixel = 0
+cafeteria.Position = UDim2.new(0.259292483, 0, 0.532874286, 0)
+cafeteria.Size = UDim2.new(0, 83, 0, 35)
+cafeteria.Font = Enum.Font.Gotham
+cafeteria.Text = ""
+cafeteria.TextColor3 = Color3.fromRGB(255, 255, 255)
+cafeteria.TextSize = 14.000
+
+Cafeteriaround.Name = "Cafeteriaround"
+Cafeteriaround.Parent = cafeteria
+Cafeteriaround.Active = true
+Cafeteriaround.AnchorPoint = Vector2.new(0.5, 0.5)
+Cafeteriaround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cafeteriaround.BackgroundTransparency = 1.000
+Cafeteriaround.Position = UDim2.new(0.502564967, 0, 0.514463603, 0)
+Cafeteriaround.Selectable = true
+Cafeteriaround.Size = UDim2.new(1.02427816, 0, 1.02892745, 0)
+Cafeteriaround.Image = "rbxassetid://3570695787"
+Cafeteriaround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+Cafeteriaround.ScaleType = Enum.ScaleType.Slice
+Cafeteriaround.SliceCenter = Rect.new(100, 100, 100, 100)
+Cafeteriaround.SliceScale = 0.060
+
+Cafeterialbl.Name = "Cafeterialbl"
+Cafeterialbl.Parent = cafeteria
+Cafeterialbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cafeterialbl.BackgroundTransparency = 1.000
+Cafeterialbl.Position = UDim2.new(-0.00957433227, 0, 0.0381077342, 0)
+Cafeterialbl.Size = UDim2.new(0, 83, 0, 32)
+Cafeterialbl.Font = Enum.Font.Gotham
+Cafeterialbl.Text = "Cafeteria"
+Cafeterialbl.TextColor3 = Color3.fromRGB(255, 85, 0)
+Cafeterialbl.TextSize = 12.000
+Cafeterialbl.TextWrapped = true
+
+yard.Name = "yard"
+yard.Parent = Main
+yard.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+yard.BackgroundTransparency = 1.000
+yard.BorderSizePixel = 0
+yard.Position = UDim2.new(0.259292483, 0, 0.384225607, 0)
+yard.Size = UDim2.new(0, 83, 0, 35)
+yard.Font = Enum.Font.Gotham
+yard.Text = ""
+yard.TextColor3 = Color3.fromRGB(255, 255, 255)
+yard.TextSize = 14.000
+
+Yardround.Name = "Yardround"
+Yardround.Parent = yard
+Yardround.Active = true
+Yardround.AnchorPoint = Vector2.new(0.5, 0.5)
+Yardround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Yardround.BackgroundTransparency = 1.000
+Yardround.Position = UDim2.new(0.502564967, 0, 0.514463603, 0)
+Yardround.Selectable = true
+Yardround.Size = UDim2.new(1.02427816, 0, 1.02892745, 0)
+Yardround.Image = "rbxassetid://3570695787"
+Yardround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+Yardround.ScaleType = Enum.ScaleType.Slice
+Yardround.SliceCenter = Rect.new(100, 100, 100, 100)
+Yardround.SliceScale = 0.060
+
+Yardlbl.Name = "Yardlbl"
+Yardlbl.Parent = yard
+Yardlbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Yardlbl.BackgroundTransparency = 1.000
+Yardlbl.Position = UDim2.new(-0.00957433227, 0, 0.0381077342, 0)
+Yardlbl.Size = UDim2.new(0, 83, 0, 32)
+Yardlbl.Font = Enum.Font.Gotham
+Yardlbl.Text = "Yard"
+Yardlbl.TextColor3 = Color3.fromRGB(255, 85, 0)
+Yardlbl.TextSize = 12.000
+Yardlbl.TextWrapped = true
+
+arrestCrims.Name = "arrestCrims"
+arrestCrims.Parent = Main
+arrestCrims.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+arrestCrims.BackgroundTransparency = 1.000
+arrestCrims.BorderSizePixel = 0
+arrestCrims.Position = UDim2.new(0.752989948, 0, 0.529495895, 0)
+arrestCrims.Size = UDim2.new(0, 83, 0, 35)
+arrestCrims.Font = Enum.Font.Gotham
+arrestCrims.Text = ""
+arrestCrims.TextColor3 = Color3.fromRGB(255, 255, 255)
+arrestCrims.TextSize = 14.000
+
+arrestCrimsround.Name = "arrestCrimsround"
+arrestCrimsround.Parent = arrestCrims
+arrestCrimsround.Active = true
+arrestCrimsround.AnchorPoint = Vector2.new(0.5, 0.5)
+arrestCrimsround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+arrestCrimsround.BackgroundTransparency = 1.000
+arrestCrimsround.Position = UDim2.new(0.502564967, 0, 0.514463603, 0)
+arrestCrimsround.Selectable = true
+arrestCrimsround.Size = UDim2.new(1.02427816, 0, 1.02892745, 0)
+arrestCrimsround.Image = "rbxassetid://3570695787"
+arrestCrimsround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+arrestCrimsround.ScaleType = Enum.ScaleType.Slice
+arrestCrimsround.SliceCenter = Rect.new(100, 100, 100, 100)
+arrestCrimsround.SliceScale = 0.060
+
+arrestCrimslbl.Name = "arrestCrimslbl"
+arrestCrimslbl.Parent = arrestCrims
+arrestCrimslbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+arrestCrimslbl.BackgroundTransparency = 1.000
+arrestCrimslbl.Position = UDim2.new(-0.00957433227, 0, 0.0381077342, 0)
+arrestCrimslbl.Size = UDim2.new(0, 83, 0, 32)
+arrestCrimslbl.Font = Enum.Font.Gotham
+arrestCrimslbl.Text = "Arrest Criminals"
+arrestCrimslbl.TextColor3 = Color3.fromRGB(255, 85, 0)
+arrestCrimslbl.TextSize = 12.000
+arrestCrimslbl.TextWrapped = true
+
+killAura.Name = "killAura"
+killAura.Parent = Main
+killAura.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+killAura.BackgroundTransparency = 1.000
+killAura.BorderSizePixel = 0
+killAura.Position = UDim2.new(0.559712648, 0, 0.526117504, 0)
+killAura.Size = UDim2.new(0, 83, 0, 35)
+killAura.Font = Enum.Font.Gotham
+killAura.Text = ""
+killAura.TextColor3 = Color3.fromRGB(255, 255, 255)
+killAura.TextSize = 14.000
+
+KillAuraround.Name = "KillAuraround"
+KillAuraround.Parent = killAura
+KillAuraround.Active = true
+KillAuraround.AnchorPoint = Vector2.new(0.5, 0.5)
+KillAuraround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KillAuraround.BackgroundTransparency = 1.000
+KillAuraround.Position = UDim2.new(0.502564967, 0, 0.514463603, 0)
+KillAuraround.Selectable = true
+KillAuraround.Size = UDim2.new(1.02427816, 0, 1.02892745, 0)
+KillAuraround.Image = "rbxassetid://3570695787"
+KillAuraround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+KillAuraround.ScaleType = Enum.ScaleType.Slice
+KillAuraround.SliceCenter = Rect.new(100, 100, 100, 100)
+KillAuraround.SliceScale = 0.060
+
+KillAuralbl.Name = "KillAuralbl"
+KillAuralbl.Parent = killAura
+KillAuralbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KillAuralbl.BackgroundTransparency = 1.000
+KillAuralbl.Position = UDim2.new(-0.00957433227, 0, 0.0381077342, 0)
+KillAuralbl.Size = UDim2.new(0, 83, 0, 32)
+KillAuralbl.Font = Enum.Font.Gotham
+KillAuralbl.Text = "Kill Aura"
+KillAuralbl.TextColor3 = Color3.fromRGB(255, 85, 0)
+KillAuralbl.TextSize = 12.000
+KillAuralbl.TextWrapped = true
+
+giveGuns.Name = "giveGuns"
+giveGuns.Parent = Main
+giveGuns.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+giveGuns.BackgroundTransparency = 1.000
+giveGuns.BorderSizePixel = 0
+giveGuns.Position = UDim2.new(0.563914299, 0, 0.225441799, 0)
+giveGuns.Size = UDim2.new(0, 83, 0, 35)
+giveGuns.Font = Enum.Font.Gotham
+giveGuns.Text = ""
+giveGuns.TextColor3 = Color3.fromRGB(255, 255, 255)
+giveGuns.TextSize = 14.000
+
+giveGunsround.Name = "giveGunsround"
+giveGunsround.Parent = giveGuns
+giveGunsround.Active = true
+giveGunsround.AnchorPoint = Vector2.new(0.5, 0.5)
+giveGunsround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+giveGunsround.BackgroundTransparency = 1.000
+giveGunsround.Position = UDim2.new(0.502564967, 0, 0.514463603, 0)
+giveGunsround.Selectable = true
+giveGunsround.Size = UDim2.new(1.02427816, 0, 1.02892745, 0)
+giveGunsround.Image = "rbxassetid://3570695787"
+giveGunsround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+giveGunsround.ScaleType = Enum.ScaleType.Slice
+giveGunsround.SliceCenter = Rect.new(100, 100, 100, 100)
+giveGunsround.SliceScale = 0.060
+
+giveGunslbl.Name = "giveGunslbl"
+giveGunslbl.Parent = giveGuns
+giveGunslbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+giveGunslbl.BackgroundTransparency = 1.000
+giveGunslbl.Position = UDim2.new(-0.00957433227, 0, 0.0381077342, 0)
+giveGunslbl.Size = UDim2.new(0, 83, 0, 32)
+giveGunslbl.Font = Enum.Font.Gotham
+giveGunslbl.Text = "Give Guns"
+giveGunslbl.TextColor3 = Color3.fromRGB(255, 85, 0)
+giveGunslbl.TextSize = 12.000
+giveGunslbl.TextWrapped = true
+
+meleeweapons.Name = "meleeweapons"
+meleeweapons.Parent = Main
+meleeweapons.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+meleeweapons.BackgroundTransparency = 1.000
+meleeweapons.BorderSizePixel = 0
+meleeweapons.Position = UDim2.new(0.755090773, 0, 0.228820175, 0)
+meleeweapons.Size = UDim2.new(0, 83, 0, 35)
+meleeweapons.Font = Enum.Font.Gotham
+meleeweapons.Text = ""
+meleeweapons.TextColor3 = Color3.fromRGB(255, 255, 255)
+meleeweapons.TextSize = 14.000
+
+MeleeWeaponsround.Name = "MeleeWeaponsround"
+MeleeWeaponsround.Parent = meleeweapons
+MeleeWeaponsround.Active = true
+MeleeWeaponsround.AnchorPoint = Vector2.new(0.5, 0.5)
+MeleeWeaponsround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MeleeWeaponsround.BackgroundTransparency = 1.000
+MeleeWeaponsround.Position = UDim2.new(0.502564967, 0, 0.514463603, 0)
+MeleeWeaponsround.Selectable = true
+MeleeWeaponsround.Size = UDim2.new(1.02427816, 0, 1.02892745, 0)
+MeleeWeaponsround.Image = "rbxassetid://3570695787"
+MeleeWeaponsround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+MeleeWeaponsround.ScaleType = Enum.ScaleType.Slice
+MeleeWeaponsround.SliceCenter = Rect.new(100, 100, 100, 100)
+MeleeWeaponsround.SliceScale = 0.060
+
+MeleeWeaponslbl.Name = "MeleeWeaponslbl"
+MeleeWeaponslbl.Parent = meleeweapons
+MeleeWeaponslbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MeleeWeaponslbl.BackgroundTransparency = 1.000
+MeleeWeaponslbl.Position = UDim2.new(-0.00957433227, 0, 0.0381077342, 0)
+MeleeWeaponslbl.Size = UDim2.new(0, 83, 0, 32)
+MeleeWeaponslbl.Font = Enum.Font.Gotham
+MeleeWeaponslbl.Text = "Melee Weapons"
+MeleeWeaponslbl.TextColor3 = Color3.fromRGB(255, 85, 0)
+MeleeWeaponslbl.TextSize = 12.000
+MeleeWeaponslbl.TextWrapped = true
+
+removeDoors.Name = "removeDoors"
+removeDoors.Parent = Main
+removeDoors.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+removeDoors.BackgroundTransparency = 1.000
+removeDoors.BorderSizePixel = 0
+removeDoors.Position = UDim2.new(0.757191658, 0, 0.380847245, 0)
+removeDoors.Size = UDim2.new(0, 83, 0, 35)
+removeDoors.Font = Enum.Font.Gotham
+removeDoors.Text = ""
+removeDoors.TextColor3 = Color3.fromRGB(255, 255, 255)
+removeDoors.TextSize = 14.000
+
+RemoveDoorsround.Name = "RemoveDoorsround"
+RemoveDoorsround.Parent = removeDoors
+RemoveDoorsround.Active = true
+RemoveDoorsround.AnchorPoint = Vector2.new(0.5, 0.5)
+RemoveDoorsround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RemoveDoorsround.BackgroundTransparency = 1.000
+RemoveDoorsround.Position = UDim2.new(0.502564967, 0, 0.514463603, 0)
+RemoveDoorsround.Selectable = true
+RemoveDoorsround.Size = UDim2.new(1.02427816, 0, 1.02892745, 0)
+RemoveDoorsround.Image = "rbxassetid://3570695787"
+RemoveDoorsround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+RemoveDoorsround.ScaleType = Enum.ScaleType.Slice
+RemoveDoorsround.SliceCenter = Rect.new(100, 100, 100, 100)
+RemoveDoorsround.SliceScale = 0.060
+
+RemoveDoorslbl.Name = "RemoveDoorslbl"
+RemoveDoorslbl.Parent = removeDoors
+RemoveDoorslbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RemoveDoorslbl.BackgroundTransparency = 1.000
+RemoveDoorslbl.Position = UDim2.new(-0.00957433227, 0, 0.0381077342, 0)
+RemoveDoorslbl.Size = UDim2.new(0, 83, 0, 32)
+RemoveDoorslbl.Font = Enum.Font.Gotham
+RemoveDoorslbl.Text = "Remove Doors"
+RemoveDoorslbl.TextColor3 = Color3.fromRGB(255, 85, 0)
+RemoveDoorslbl.TextSize = 12.000
+RemoveDoorslbl.TextWrapped = true
+
+bTools.Name = "bTools"
+bTools.Parent = Main
+bTools.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+bTools.BackgroundTransparency = 1.000
+bTools.BorderSizePixel = 0
+bTools.Position = UDim2.new(0.563914359, 0, 0.377468854, 0)
+bTools.Size = UDim2.new(0, 83, 0, 35)
+bTools.Font = Enum.Font.Gotham
+bTools.Text = ""
+bTools.TextColor3 = Color3.fromRGB(255, 255, 255)
+bTools.TextSize = 14.000
+
+BToolsround.Name = "BToolsround"
+BToolsround.Parent = bTools
+BToolsround.Active = true
+BToolsround.AnchorPoint = Vector2.new(0.5, 0.5)
+BToolsround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BToolsround.BackgroundTransparency = 1.000
+BToolsround.Position = UDim2.new(0.502564967, 0, 0.514463603, 0)
+BToolsround.Selectable = true
+BToolsround.Size = UDim2.new(1.02427816, 0, 1.02892745, 0)
+BToolsround.Image = "rbxassetid://3570695787"
+BToolsround.ImageColor3 = Color3.fromRGB(29, 29, 29)
+BToolsround.ScaleType = Enum.ScaleType.Slice
+BToolsround.SliceCenter = Rect.new(100, 100, 100, 100)
+BToolsround.SliceScale = 0.060
+
+BToolslbl.Name = "BToolslbl"
+BToolslbl.Parent = bTools
+BToolslbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BToolslbl.BackgroundTransparency = 1.000
+BToolslbl.Position = UDim2.new(-0.00957433227, 0, 0.0381077342, 0)
+BToolslbl.Size = UDim2.new(0, 83, 0, 32)
+BToolslbl.Font = Enum.Font.Gotham
+BToolslbl.Text = "BTools"
+BToolslbl.TextColor3 = Color3.fromRGB(255, 85, 0)
+BToolslbl.TextSize = 12.000
+BToolslbl.TextWrapped = true
+
+RapidFire.Name = "RapidFire"
+RapidFire.Parent = Main
+RapidFire.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RapidFire.BackgroundTransparency = 1.000
+RapidFire.Position = UDim2.new(0.318547368, 0, 0.708988011, 0)
+RapidFire.Size = UDim2.new(0, 173, 0, 27)
+RapidFire.Font = Enum.Font.GothamBlack
+RapidFire.Text = "Rapid Fire For Each Gun (equip the gun first)"
+RapidFire.TextColor3 = Color3.fromRGB(227, 75, 0)
+RapidFire.TextScaled = true
+RapidFire.TextSize = 14.000
+RapidFire.TextWrapped = true
+
+TeleportUnderline_2.Name = "TeleportUnderline"
+TeleportUnderline_2.Parent = RapidFire
+TeleportUnderline_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeleportUnderline_2.BackgroundTransparency = 1.000
+TeleportUnderline_2.Position = UDim2.new(0.000509449514, 0, 0.451105177, 0)
+TeleportUnderline_2.Size = UDim2.new(0, 173, 0, 27)
+TeleportUnderline_2.Font = Enum.Font.GothamBlack
+TeleportUnderline_2.Text = "_________________________"
+TeleportUnderline_2.TextColor3 = Color3.fromRGB(227, 75, 0)
+TeleportUnderline_2.TextSize = 14.000
+
+remington870.Name = "remington870"
+remington870.Parent = Main
+remington870.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+remington870.BackgroundTransparency = 1.000
+remington870.BorderSizePixel = 0
+remington870.Position = UDim2.new(0.137895346, 0, 0.843685269, 0)
+remington870.Size = UDim2.new(0, 105, 0, 35)
+remington870.Font = Enum.Font.Gotham
+remington870.Text = ""
+remington870.TextColor3 = Color3.fromRGB(255, 255, 255)
+remington870.TextSize = 14.000
+
+remington870round.Name = "remington870round"
+remington870round.Parent = remington870
+remington870round.Active = true
+remington870round.AnchorPoint = Vector2.new(0.5, 0.5)
+remington870round.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+remington870round.BackgroundTransparency = 1.000
+remington870round.Position = UDim2.new(0.509685218, 0, 0.514463603, 0)
+remington870round.Selectable = true
+remington870round.Size = UDim2.new(1.03860676, 0, 1.02892745, 0)
+remington870round.Image = "rbxassetid://3570695787"
+remington870round.ImageColor3 = Color3.fromRGB(29, 29, 29)
+remington870round.ScaleType = Enum.ScaleType.Slice
+remington870round.SliceCenter = Rect.new(100, 100, 100, 100)
+remington870round.SliceScale = 0.060
+
+remington870lbl.Name = "remington870lbl"
+remington870lbl.Parent = remington870
+remington870lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+remington870lbl.BackgroundTransparency = 1.000
+remington870lbl.Position = UDim2.new(-0.00961831864, 0, 0.0381068625, 0)
+remington870lbl.Size = UDim2.new(0, 105, 0, 32)
+remington870lbl.Font = Enum.Font.Gotham
+remington870lbl.Text = "Remington 870"
+remington870lbl.TextColor3 = Color3.fromRGB(255, 85, 0)
+remington870lbl.TextSize = 12.000
+remington870lbl.TextWrapped = true
+
+ak47.Name = "ak47"
+ak47.Parent = Main
+ak47.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+ak47.BackgroundTransparency = 1.000
+ak47.BorderSizePixel = 0
+ak47.Position = UDim2.new(0.387895316, 0, 0.847063661, 0)
+ak47.Size = UDim2.new(0, 105, 0, 35)
+ak47.Font = Enum.Font.Gotham
+ak47.Text = ""
+ak47.TextColor3 = Color3.fromRGB(255, 255, 255)
+ak47.TextSize = 14.000
+
+Ak47round.Name = "Ak47round"
+Ak47round.Parent = ak47
+Ak47round.Active = true
+Ak47round.AnchorPoint = Vector2.new(0.5, 0.5)
+Ak47round.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ak47round.BackgroundTransparency = 1.000
+Ak47round.Position = UDim2.new(0.509685218, 0, 0.514463603, 0)
+Ak47round.Selectable = true
+Ak47round.Size = UDim2.new(1.03860676, 0, 1.02892745, 0)
+Ak47round.Image = "rbxassetid://3570695787"
+Ak47round.ImageColor3 = Color3.fromRGB(29, 29, 29)
+Ak47round.ScaleType = Enum.ScaleType.Slice
+Ak47round.SliceCenter = Rect.new(100, 100, 100, 100)
+Ak47round.SliceScale = 0.060
+
+Ak47lbl.Name = "Ak47lbl"
+Ak47lbl.Parent = ak47
+Ak47lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ak47lbl.BackgroundTransparency = 1.000
+Ak47lbl.Position = UDim2.new(-0.00961831864, 0, 0.0381068625, 0)
+Ak47lbl.Size = UDim2.new(0, 105, 0, 32)
+Ak47lbl.Font = Enum.Font.Gotham
+Ak47lbl.Text = "AK - 47"
+Ak47lbl.TextColor3 = Color3.fromRGB(255, 85, 0)
+Ak47lbl.TextSize = 12.000
+Ak47lbl.TextWrapped = true
+
+m9.Name = "m9"
+m9.Parent = Main
+m9.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+m9.BackgroundTransparency = 1.000
+m9.BorderSizePixel = 0
+m9.Position = UDim2.new(0.639999986, 0, 0.843999982, 0)
+m9.Size = UDim2.new(0, 105, 0, 35)
+m9.Font = Enum.Font.Gotham
+m9.Text = ""
+m9.TextColor3 = Color3.fromRGB(255, 255, 255)
+m9.TextSize = 14.000
+
+m9round.Name = "m9round"
+m9round.Parent = m9
+m9round.Active = true
+m9round.AnchorPoint = Vector2.new(0.5, 0.5)
+m9round.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+m9round.BackgroundTransparency = 1.000
+m9round.Position = UDim2.new(0.509685218, 0, 0.514463603, 0)
+m9round.Selectable = true
+m9round.Size = UDim2.new(1.03860676, 0, 1.02892745, 0)
+m9round.Image = "rbxassetid://3570695787"
+m9round.ImageColor3 = Color3.fromRGB(29, 29, 29)
+m9round.ScaleType = Enum.ScaleType.Slice
+m9round.SliceCenter = Rect.new(100, 100, 100, 100)
+m9round.SliceScale = 0.060
+
+m9lbl.Name = "m9lbl"
+m9lbl.Parent = m9
+m9lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+m9lbl.BackgroundTransparency = 1.000
+m9lbl.Position = UDim2.new(-0.00961831864, 0, 0.0381068625, 0)
+m9lbl.Size = UDim2.new(0, 105, 0, 32)
+m9lbl.Font = Enum.Font.Gotham
+m9lbl.Text = "M9"
+m9lbl.TextColor3 = Color3.fromRGB(255, 85, 0)
+m9lbl.TextSize = 12.000
+m9lbl.TextWrapped = true
+
+Opengui.Name = "Opengui"
+Opengui.Parent = PrisonHub
+Opengui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Opengui.BackgroundTransparency = 1.000
+Opengui.Position = UDim2.new(-3.27988528e-05, 0, 0.866093338, 0)
+Opengui.Size = UDim2.new(0, 61, 0, 35)
+Opengui.Visible = false
+Opengui.Image = "rbxassetid://3570695787"
+Opengui.ImageColor3 = Color3.fromRGB(30, 30, 30)
+Opengui.ScaleType = Enum.ScaleType.Slice
+Opengui.SliceCenter = Rect.new(100, 100, 100, 100)
+Opengui.SliceScale = 0.060
+
+open.Name = "open"
+open.Parent = Opengui
+open.BackgroundTransparency = 1.000
+open.LayoutOrder = 13
+open.Position = UDim2.new(0.213093966, 0, 0, 0)
+open.Size = UDim2.new(0, 60, 0, 35)
+open.ZIndex = 2
+open.Image = "rbxassetid://3926305904"
+open.ImageColor3 = Color3.fromRGB(255, 85, 0)
+open.ImageRectOffset = Vector2.new(444, 844)
+open.ImageRectSize = Vector2.new(36, 36)
+
+-- Scripts:
+
+game.StarterGui:SetCore("SendNotification",{Title = "Credit",Text = "Made by Acid"})
+
+-- Open / Close -- 
+
+Close.MouseButton1Click:connect(function()
+	Main.Visible = false
+	Opengui.Visible = true
+end)
+
+open.MouseButton1Click:connect(function()
+	Main.Visible = true
+	Opengui.Visible = false
+end)
+
+-- Teleports --
+insidePrison.MouseButton1Click:connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(924.4, 97.1383, 2388.5)
+end)
+
+outsidePrison.MouseButton1Click:connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(452, 96, 2290)
+end)
+
+armory.MouseButton1Click:connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(837.736755, 99.9900055, 2265.31445)
+end)
+
+yard.MouseButton1Click:connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(798.999756, 98.1899414, 2540.5)
+end)
+
+criminal.MouseButton1Click:connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-943, 94, 2066)
+end)
+
+cafeteria.MouseButton1Click:connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(882, 99, 2287)
+end)
+
+-- Main Functions --
+
+giveGuns.MouseButton1Click:connect(function()
+	local weapons = {"Remington 870", "M9", "AK-47", "M4A1", "Riot Shield"}
+	for i, v in pairs(game.Workspace["Prison_ITEMS"].giver:GetChildren()) do
+		for j, k in pairs(weapons) do
+			if v.Name == k then
+				v:MoveTo(game.Players.LocalPlayer.Character.Torso.Position)
+			end
+		end
+	end
+end)
+
+meleeweapons.MouseButton1Click:connect(function()
+	for i, v in pairs(game.Workspace["Prison_ITEMS"].single:GetChildren()) do
+		v:MoveTo(game.Players.LocalPlayer.Character.Torso.Position)
+	end
+end)
+
+bTools.MouseButton1Click:connect(function()
+	local tool1 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+	local tool2 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+	local tool3 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+	tool1.BinType = "Clone"
+	tool2.BinType = "Hammer"
+	tool3.BinType = "Grab"
+end)
+
+removeDoors.MouseButton1Click:connect(function()
+	game.Workspace.Doors:Destroy()
+end)
+
+killAura.MouseButton1Click:connect(function()
+	mainRemotes = game.ReplicatedStorage
+	meleeRemote = mainRemotes['meleeEvent']
+
+	killAura = true
+
+	contextactionservice = game.ContextActionService
+
+	function toggleKillAura(actionName, inputState, inputObject)
+		print('Doing the action : ' .. actionName)
+		if inputState == Enum.UserInputState.Begin then
+			if killAura == true then
+				killAura = false
+			else
+				killAura = true
+			end
+		end
+	end
+
+	contextactionservice:BindAction('ToggleKillAura', toggleKillAura, false, Enum.KeyCode.K)
+
+	while wait() do
+		if killAura == true then
+			for _, plr in pairs (game:GetService('Players'):GetChildren()) do
+				if plr.Name ~= game.Players.LocalPlayer.Name then
+					meleeRemote:FireServer(plr)
+				end
+			end
+		end
+	end
+
+end)
+
+arrestCrims.MouseButton1Click:connect(function()
+	local Player = game.Players.LocalPlayer
+	local cpos = Player.Character.HumanoidRootPart.CFrame
+	for i,v in pairs(game.Teams.Criminals:GetPlayers()) do
+		if v.Name ~= Player.Name then
+			local i = 10
+			repeat
+				wait()
+				i = i-1
+				game.Workspace.Remote.arrest:InvokeServer(v.Character.HumanoidRootPart)
+				Player.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 1)
+			until i == 0
+		end
+	end
+	Player.Character.HumanoidRootPart.CFrame = cpos
+	Notify("Success", "Arrested all of the n00bs", "Cool!")
+end)
+
+-- Rapid fire weapons --
+
+remington870.MouseButton1Click:connect(function()
+	
+	local Player = game.Players.LocalPlayer.Name
+	local Gun = "Remington 870" -- < -- Gun Name
+	local Run = game:GetService("RunService")
+
+	Gun = game.Players[Player].Character[Gun]
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	local Down = false
+	local Sound = Gun.Handle.FireSound
+
+	function CreateRay(Point_A, Point_B)
+		local Ray = Ray.new(Point_A, (Point_B - Point_A).Unit * (2 ^ 31 - 1))
+		local Part, Pos = workspace:FindPartOnRay(Ray, game.Players.LocalPlayer.Character)
+		local Dist = (Point_A - Pos).Magnitude
+		local CFrame = CFrame.new(Point_A, Pos) * CFrame.new(0, 0, -Dist / 2)
+
+		return CFrame, Dist, Ray
+	end
+
+	function FireLaser(target)
+		coroutine.resume(coroutine.create(function()
+			local C, D, R = CreateRay(Gun.Muzzle.CFrame.p, target.CFrame.p)
+			local Bullet = Instance.new("Part", Gun)
+			Bullet.BrickColor = BrickColor.Yellow()
+			Bullet.Material = "Neon"
+			Bullet.Anchored = true
+			Bullet.CanCollide = false
+			Bullet.Size = Vector3.new(0.2, 0.2, D)
+			Bullet.CFrame = C
+
+			local bulletTable = {}
+			table.insert(bulletTable, {
+				Hit = target,
+				Distance = D,
+				Cframe = C,
+				RayObject = R
+			})
+
+			game.ReplicatedStorage.ShootEvent:FireServer(bulletTable, Gun)
+			local C = Sound:Clone()
+			C.Parent = Gun
+			C:Play()
+			wait(0.05)
+			Bullet:Remove()
+		end))
+	end
+
+	Mouse.Button1Down:Connect(function()
+		Down = true
+	end)
+
+
+	Mouse.Button1Up:Connect(function()
+		Down = false
+	end)
+
+	while Run.Stepped:wait() do
+		if Down == true then
+			game.ReplicatedStorage.SoundEvent:FireServer(Sound, Gun)
+			FireLaser(Mouse.Target)
+		end
+	end
+	
+end)
+
+m9.MouseButton1Click:connect(function()
+	
+	local Player = game.Players.LocalPlayer.Name
+	local Gun = "M9" -- < -- Gun Name
+	local Run = game:GetService("RunService")
+
+	Gun = game.Players[Player].Character[Gun]
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	local Down = false
+	local Sound = Gun.Handle.FireSound
+
+	function CreateRay(Point_A, Point_B)
+		local Ray = Ray.new(Point_A, (Point_B - Point_A).Unit * (2 ^ 31 - 1))
+		local Part, Pos = workspace:FindPartOnRay(Ray, game.Players.LocalPlayer.Character)
+		local Dist = (Point_A - Pos).Magnitude
+		local CFrame = CFrame.new(Point_A, Pos) * CFrame.new(0, 0, -Dist / 2)
+
+		return CFrame, Dist, Ray
+	end
+
+	function FireLaser(target)
+		coroutine.resume(coroutine.create(function()
+			local C, D, R = CreateRay(Gun.Muzzle.CFrame.p, target.CFrame.p)
+			local Bullet = Instance.new("Part", Gun)
+			Bullet.BrickColor = BrickColor.Yellow()
+			Bullet.Material = "Neon"
+			Bullet.Anchored = true
+			Bullet.CanCollide = false
+			Bullet.Size = Vector3.new(0.2, 0.2, D)
+			Bullet.CFrame = C
+
+			local bulletTable = {}
+			table.insert(bulletTable, {
+				Hit = target,
+				Distance = D,
+				Cframe = C,
+				RayObject = R
+			})
+
+			game.ReplicatedStorage.ShootEvent:FireServer(bulletTable, Gun)
+			local C = Sound:Clone()
+			C.Parent = Gun
+			C:Play()
+			wait(0.05)
+			Bullet:Remove()
+		end))
+	end
+
+	Mouse.Button1Down:Connect(function()
+		Down = true
+	end)
+
+
+	Mouse.Button1Up:Connect(function()
+		Down = false
+	end)
+
+	while Run.Stepped:wait() do
+		if Down == true then
+			game.ReplicatedStorage.SoundEvent:FireServer(Sound, Gun)
+			FireLaser(Mouse.Target)
+		end
+	end
+	
+end)
+
+ak47.MouseButton1Click:connect(function()
+	
+	local Player = game.Players.LocalPlayer.Name
+	local Gun = "AK-47" -- < -- Gun Name
+	local Run = game:GetService("RunService")
+
+	Gun = game.Players[Player].Character[Gun]
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	local Down = false
+	local Sound = Gun.Handle.FireSound
+
+	function CreateRay(Point_A, Point_B)
+		local Ray = Ray.new(Point_A, (Point_B - Point_A).Unit * (2 ^ 31 - 1))
+		local Part, Pos = workspace:FindPartOnRay(Ray, game.Players.LocalPlayer.Character)
+		local Dist = (Point_A - Pos).Magnitude
+		local CFrame = CFrame.new(Point_A, Pos) * CFrame.new(0, 0, -Dist / 2)
+
+		return CFrame, Dist, Ray
+	end
+
+	function FireLaser(target)
+		coroutine.resume(coroutine.create(function()
+			local C, D, R = CreateRay(Gun.Muzzle.CFrame.p, target.CFrame.p)
+			local Bullet = Instance.new("Part", Gun)
+			Bullet.BrickColor = BrickColor.Yellow()
+			Bullet.Material = "Neon"
+			Bullet.Anchored = true
+			Bullet.CanCollide = false
+			Bullet.Size = Vector3.new(0.2, 0.2, D)
+			Bullet.CFrame = C
+
+			local bulletTable = {}
+			table.insert(bulletTable, {
+				Hit = target,
+				Distance = D,
+				Cframe = C,
+				RayObject = R
+			})
+
+			game.ReplicatedStorage.ShootEvent:FireServer(bulletTable, Gun)
+			local C = Sound:Clone()
+			C.Parent = Gun
+			C:Play()
+			wait(0.05)
+			Bullet:Remove()
+		end))
+	end
+
+	Mouse.Button1Down:Connect(function()
+		Down = true
+	end)
+
+
+	Mouse.Button1Up:Connect(function()
+		Down = false
+	end)
+
+	while Run.Stepped:wait() do
+		if Down == true then
+			game.ReplicatedStorage.SoundEvent:FireServer(Sound, Gun)
+			FireLaser(Mouse.Target)
+		end
+	end
+	
+end)
